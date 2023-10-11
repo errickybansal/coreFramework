@@ -1,0 +1,152 @@
+# com.scm.automation.test.login.CommonLoginServiceFunctionalTest
+
+testRestApiService:
+  - testcaseId: LOGIN-POSITIVE-0001
+    testcaseName: "Test login positive scenario-1"
+    request:
+      body: |
+        {
+          "payload": {
+            "password": "1234",
+            "username": "user1",
+            "clientId": "workbench-frontend",
+            "clientSecret": "55929cd3-90c3-4718-a5ed-4cd942a10296",
+            "grantType": "password",
+            "realm": "scps",
+            "callType": "UI",
+            "doNotAllowMultipleLogins": false
+          }
+        }
+
+testXmlRestApiService:
+  - testcaseId: XML-REQUEST-001
+    testcaseName: "test xml post request and response optimisation"
+    request:
+      body: &xmlBody |
+        <?xml version="1.0"?>
+        <TravelerInformation>
+          <name>John</name>
+          <email>john344@gmail.com</email>
+          <address>Usa</address>
+        </TravelerInformation>
+
+testXmlRestAssuredApi:
+  - testcaseId: XML-REQUEST-002
+    testcaseName: "test xml post request and response"
+    request:
+      body: &xmlBody |
+        <Order OrderNo="04185064" DocumentType="0001" EnterpriseCode="B2B"/>
+
+testXmlRestApiServiceUniRest:
+  - testcaseId: XML-REQUEST-001
+    testcaseName: "test xml post request and response optimisation"
+    request:
+      body: *xmlBody
+
+testImageUploadService:
+  - testcaseId: MULTIPART-REQUEST-001
+    testcaseName: "test xml post request and response optimisation"
+    request:
+      multiPart:
+        additionalMetadata: fbbfbbdfgbfg
+        testing: testing
+        file:
+          - "src/test/resources/com.scm.automation.test/Screenshot1.png"
+          - "src/test/resources/com.scm.automation.test/Screenshot2.png"
+
+testImageUploadServiceUsingUnirest:
+  - testcaseId: MULTIPART-REQUEST-001
+    testcaseName: "test xml post request and response optimisation"
+    request:
+      multiPart:
+        additionalMetadata: fbbfbbdfgbfg
+        testing: testing
+        file:
+          - "src/test/resources/com.scm.automation.test/Screenshot1.png"
+          - "src/test/resources/com.scm.automation.test/Screenshot2.png"
+testTibcoService:
+  - testcaseId: TEST-TIBCO-0002
+    testcaseName: "Test tibco positive scenario-2"
+    request:
+      message: |
+        <?xml version="1.0"?>
+        <Order></Order>
+
+testFulfillmentDatabaseFulfillmentLineStatus:
+  - testcaseId: TEST-FSDATABASE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+      params:
+        orderNumber: AUTO87981720
+  - testcaseId: TEST-FSDATABASE-0002
+    testcaseName: "Test DataBase positive scenario-2"
+    request:
+      params:
+        orderNumber: AUTO87981721
+
+testOmsDatabaseYfsShipment:
+  - testcaseId: TEST-OMSDATABASE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+      params:
+        shipmentKey: 201508111239323231507
+
+testTmsDatabaseInvoiceDetails:
+  - testcaseId: TEST-TMSDATABASE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+       params:
+
+testFsMongoDatabaseFetchDetails:
+  - testcaseId: TEST-FSMONGODATABASE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+      params:
+        queryFilter: {"tenantId": "groceryb2b", "source": "OMS", "orderNo": "AUTO28136162"}
+
+testFsMongoDatabaseFetchDetailsForParticularFields:
+  - testcaseId: TEST-FSMONGODATABASE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+      params:
+        queryFilter: {"tenantId": "groceryb2b", "source": "OMS", "orderNo": "AUTO28136162"}
+        fieldNames: ["payload"]
+
+testFsMongoDatabaseUpdateDetails:
+  - testcaseId: TEST-FSMONGODATABASEUPDATE-0001
+    testcaseName: "Test DataBase positive scenario-1"
+    request:
+      params:
+        queryFilter:
+          orderNo: AUTO58573462
+          source: FO
+        updateFilter:
+          eventType: mdnRequest
+
+testPaymentDetailsReceiveMessageDetails:
+  - testcaseId: TEST-PAYMENTDETAILS-0001
+    testcaseName: "Test Queue Receive positive scenario-1"
+    request:
+      queueName: RIL.B2B.CREDITORDERGSTONLATEPAYMENTDETAILS.AJIODHAN.DOCSERV.REQ.DUP.QUEUE
+
+testSoapApiService:
+   - testcaseId: SOAP-REQUEST-001
+     testcaseName: "test Soap Api request and response"
+     request:
+      body: |
+       <soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:sapi=\"http://schemas.datacontract.org/2004/07/SAPI.Entities.Admin\" xmlns:sapi1=\"http://schemas.datacontract.org/2004/07/SAPI.Entities.WayBillGeneration\" xmlns:tem=\"http://tempuri.org/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:nil=\"true\"> <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\"> <wsa:Action>http://tempuri.org/IWayBillGeneration/GenerateWayBill</wsa:Action> </soap:Header> <soap:Body> <tem:GenerateWayBill> <tem:Request> <sapi1:Consignee> <sapi1:ConsigneeAddress1>phase 2</sapi1:ConsigneeAddress1> <sapi1:ConsigneeAddress2>Shyam vihar</sapi1:ConsigneeAddress2> <sapi1:ConsigneeAddress3>mukhani</sapi1:ConsigneeAddress3> <sapi1:ConsigneeMobile>8880033999</sapi1:ConsigneeMobile> <sapi1:ConsigneeName>Shiva Gundu</sapi1:ConsigneeName> <sapi1:ConsigneePincode>400001</sapi1:ConsigneePincode> </sapi1:Consignee> <sapi1:Services> <sapi1:AWBNo>59006022655</sapi1:AWBNo> <sapi1:ActualWeight>300.0</sapi1:ActualWeight> <sapi1:CollectableAmount>500.0</sapi1:CollectableAmount> <sapi1:Commodity> <sapi1:CommodityDetail1>Printed Jacket with Kullu Borders</sapi1:CommodityDetail1> </sapi1:Commodity> <sapi1:CreditReferenceNo>DebaBDCIS655</sapi1:CreditReferenceNo> <sapi1:DeclaredValue>500.0</sapi1:DeclaredValue> <sapi1:Dimensions> <sapi1:Dimension> <sapi1:Breadth>10.0</sapi1:Breadth> <sapi1:Count>1</sapi1:Count> <sapi1:Height>2.0</sapi1:Height> <sapi1:Length>10.0</sapi1:Length> </sapi1:Dimension> </sapi1:Dimensions> <sapi1:IsForcePickup>false</sapi1:IsForcePickup> <sapi1:IsReversePickup>false</sapi1:IsReversePickup> <sapi1:ItemCount>1</sapi1:ItemCount> <sapi1:PDFOutputNotRequired>true</sapi1:PDFOutputNotRequired> <sapi1:PickupDate>2022-04-11T15:10:06</sapi1:PickupDate> <sapi1:PickupTime>1510</sapi1:PickupTime> <sapi1:PieceCount>1</sapi1:PieceCount> <sapi1:ProductCode>A</sapi1:ProductCode> <sapi1:ProductType>Dutiables</sapi1:ProductType> <sapi1:RegisterPickup>false</sapi1:RegisterPickup> <sapi1:SpecialInstruction/> <sapi1:SubProductCode>C</sapi1:SubProductCode> <sapi1:itemImg/> <sapi1:itemdtl> <sapi1:ItemDetails> <sapi1:ItemID>460001938003</sapi1:ItemID> <sapi1:ItemName>Printed Jacket with Kullu Borders</sapi1:ItemName> </sapi1:ItemDetails> </sapi1:itemdtl> </sapi1:Services> <sapi1:Shipper> <sapi1:CustomerAddress1>Shop No.G-17 &amp; 18</sapi1:CustomerAddress1> <sapi1:CustomerAddress2>R City Mall, L.B.S. Marg</sapi1:CustomerAddress2> <sapi1:CustomerAddress3>Ghatkopar (West)</sapi1:CustomerAddress3> <sapi1:CustomerCode>124105</sapi1:CustomerCode> <sapi1:CustomerEmailID>Hunkemoller_mum.5958_rcity@ril.com</sapi1:CustomerEmailID> <sapi1:CustomerMobile>8697190244</sapi1:CustomerMobile> <sapi1:CustomerName>Ambience Mall </sapi1:CustomerName> <sapi1:CustomerPincode>400086</sapi1:CustomerPincode> <sapi1:IsToPayCustomer>false</sapi1:IsToPayCustomer> <sapi1:OriginArea>BOM</sapi1:OriginArea> <sapi1:VendorCode>124105</sapi1:VendorCode> </sapi1:Shipper> </tem:Request> <tem:Profile> <sapi:Api_type>S</sapi:Api_type> <sapi:Area>BLR</sapi:Area> <sapi:Customercode>142601</sapi:Customercode> <sapi:IsAdmin/> <sapi:LicenceKey>gtjxskihhrkqntmtkgqeiknghugkthkg</sapi:LicenceKey> <sapi:LoginID>BOM66563</sapi:LoginID> <sapi:Password/> <sapi:Version>1.9</sapi:Version> </tem:Profile> </tem:GenerateWayBill> </soap:Body> </soap:Envelope>
+       
+testCacheService:
+  - testcaseId: CACHE-POSITIVE-0001
+    testcaseName: Test cache scenario
+    request:
+      body:
+        key: "{HN63|DEFAULT|DEFAULT|08:00-20:00|2023-05-20}|OrderValue"
+        field: null
+        value: null
+      type: GET
+
+createTestRequest:
+  body: {"key": "value"}
+  headers:
+    test: test

@@ -1,0 +1,12 @@
+ui:
+  selenoid:
+    hub: http://10.167.190.80:30444/wd/hub
+    ui: http://10.167.190.80:31444
+  mobilab:
+    hub: https://mobilab2.ril.com/appiumcloud/wd/hub
+  jioConnect:
+    url: https://idm.jioconnect.com
+service:
+  qaService:
+    url: http://10.167.190.78:31000/qaservice/api/v1
+    id: 4

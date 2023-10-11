@@ -1,0 +1,20 @@
+name: core test suites
+
+suites:
+  - name: scm_automation_core_sanity
+    tests:
+      - name: unit tests for core functionalities
+        classes:
+          - com.scm.automation.test.CoreTest
+
+  - name: scm_automation_core_regression
+    tests:
+      - name: API tests
+        classes:
+          - com.scm.automation.test.CoreTest
+          - com.scm.automation.test.OrderXmlTest
+          - com.scm.automation.test.ServiceTest
+          - com.scm.automation.test.StepTest
+      - name: UI tests
+        classes:
+          - com.scm.automation.test.SeleniumTest

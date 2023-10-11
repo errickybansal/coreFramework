@@ -1,0 +1,9 @@
+$extends: 'com.scm.automation.test/base.yaml'
+
+name: derived yaml
+data:
+  type: string
+  value: hello world from derived
+
+deriverData:
+  message: This data wont be overriden

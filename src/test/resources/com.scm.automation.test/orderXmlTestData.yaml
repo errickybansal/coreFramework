@@ -1,0 +1,2019 @@
+testUsingXml:
+  - testcaseId: TEST-0001
+    testcaseName: "Test POJO creation"
+    request:
+      body: |
+        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <Order AllocationRuleID="SCH_Fnl" AuthorizedClient="Hybris" BillToID="9902456215" DocumentType="0001" EnterpriseCode="FnL" EntryType="STOREFRONT" OrderDate="2023-02-23T12:53:50.583+05:30" OrderNo="AUTO91134329" OrderType="NONCOD" PaymentRuleId="PAY_RULE_FnL_COD" SellerOrganizationCode="FnL">
+        <PriceInfo Currency="INR"/>
+        <Extn ExtnCustomerFirstName="Rashmi anand" ExtnCustomerID="d7e07719-e811-4f03-ba4a-d2ce0a4bd524" ExtnCustomerScreenName="jvjvjvjgjvj" ExtnIsFreeShipping="N" ExtnIsR1Applicable="Y" ExtnRefundExternal="Y" ExtnShippingCharge="34.00"/>
+        <OrderLines>
+        <OrderLine CarrierAccountNo="SURFACE" CarrierServiceCode="SURFACE" DeliveryMethod="SHP" FulfillmentType="JIT" GiftWrap="N" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="1" ReservationID="" SCAC="ECOM" ShipNode="A02C">
+        <Item ItemID="460407276003" ProductClass="GOOD" UnitOfMeasure="EACH"/>
+        <LinePriceInfo IsLinePriceForInformationOnly="N" IsPriceLocked="Y" ListPrice="4727.00" RetailPrice="7878.00" UnitPrice="4727.00"/>
+        <Extn ExtnEAN="9165113000543" ExtnGSTValue="0.00" ExtnIsPrebooked="N" ExtnIsRestrictedFlag="N" ExtnPromotionID="886306" ExtnReportingHSNCode="6206"/>
+        <PersonInfoShipTo AddressLine1="7889dqwwwwwwwwwwwwwwwwwwwwwwww" AddressLine2="kasavanhalli" City="BANGALORE" Company="" Country="IN" DayPhone="9902456215" EMailID="rashmi.anand@ril.com" FirstName="Rashmi" IsCommercialAddress="N" LastName="anand" MobilePhone="9902456215" OtherPhone="" State="KAR" ZipCode="560066"/>
+        <ShipNode ExportTaxpayerId="05AAACA6460B2Z9" NodeType="Store" ShipnodeKey="A02C">
+        <ShipNodePersonInfo AddressLine1="Trends - Ascendas" AddressLine2="Square Mall" AddressLine3="Whitefield Main Road. itpl" AddressLine4="" AddressLine5="" AddressLine6="" AlternateEmailID="" Beeper="" City="Bangalore" Company="" Country="IN" DayFaxNo="" DayPhone="9035777119" Department="" EMailID="harikrishnarecharla@gmail.com" EveningFaxNo="" EveningPhone="" FirstName="Trends" HttpUrl="" JobTitle="" LastName="2022" MiddleName="June" MobilePhone="9909090915" OtherPhone="" PersonID="" State="KAR" Suffix="" Title="" ZipCode="560066"/>
+        </ShipNode>
+        <OrderLineReservations/>
+        <References>
+        <Reference Name="ColourVariant" Value="460403894_cream"/>
+        <Reference Name="GenericId" Value="460403894"/>
+        <Reference Name="StyleType" Value=""/>
+        <Reference Name="SeasonCode" Value=""/>
+        <Reference Name="BrickFit" Value="Slim Fit"/>
+        <Reference Name="FitType" Value=""/>
+        <Reference Name="Brand" Value="raymond"/>
+        <Reference Name="Brick" Value="830216013"/>
+        <Reference Name="Vendor" Value=""/>
+        </References>
+        <OrderDates>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="EDD" RequestedDate="2023-02-23T00:00:00+05:30"/>
+        <OrderDate DateTypeId="EHD"/>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="PSD"/>
+        </OrderDates>
+        <ItemDetails CanUseAsServiceTool="N" GlobalItemID="" IsItemSuperseded="N" ItemGroupCode="PROD" ItemID="460407276003" ItemKey="20200514114542514408923" OrganizationCode="RIL" UnitOfMeasure="EACH">
+        <PrimaryInformation AllowGiftWrap="1" ColorCode="Gold" CostCurrency="INR" CountryOfOrigin="IN" Description="" DisplayItemDescription="Checks Slim Fit Shirts" ExtendedDescription="" ItemType="NonHeavy" ManufacturerName="rilfnlProductCatalog" PrimarySupplier="" ProductLine="830216013" ShortDescription="Checks Slim Fit Shirts" SizeCode="30" Status="3000" TaxableFlag="N" UnitCost="7878.00" UnitHeight="0.00" UnitHeightUOM="CM" UnitLength="0.00" UnitLengthUOM="CM" UnitVolume="0.00" UnitVolumeUOM="CUCENTIMETER" UnitWeight="30.00" UnitWeightUOM="GRAM" UnitWidth="0.00" UnitWidthUOM="CM"/>
+        <Extn ExtnBrandName="RAYMOND" ExtnComponentCount="34.00" ExtnDelistedFlag="N" ExtnImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg" ExtnMrp="7878.00" ExtnPDPImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg" ExtnSAPColor="Gold" ExtnSegmentType="Men" ExtnSize="30" ExtnSizeDisplayType="BRAND" ExtnSizeFormat="IN" ExtnUnitVolumetricWeight="12167.00"/>
+        <ClassificationCodes ECCNNo="9165113000543" TaxProductCode="6206"/>
+        </ItemDetails>
+        <LineCharges>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Promotion" ChargeName="VoucherDiscount" ChargeNameKey="2015073115322332613" ChargePerLine="0.00" ChargePerUnit="866.62" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Shipping" ChargeName="Shipping" ChargeNameKey="2015073115325832625" ChargePerLine="0.00" ChargePerUnit="34.00" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="AjioPromotion" ChargeNameKey="20191226144643402085" ChargePerLine="0.00" ChargePerUnit="787.75" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="SellerPromotion" ChargeNameKey="20191226144628402084" ChargePerLine="0.00" ChargePerUnit="2363.25" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        </LineCharges>
+        <LineTaxes/>
+        </OrderLine>
+        <OrderLine CarrierAccountNo="SURFACE" CarrierServiceCode="SURFACE" DeliveryMethod="SHP" FulfillmentType="JIT" GiftWrap="N" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="2" ReservationID="" SCAC="ECOM" ShipNode="A02C">
+        <Item ItemID="460407277002" ProductClass="GOOD" UnitOfMeasure="EACH"/>
+        <LinePriceInfo IsLinePriceForInformationOnly="N" IsPriceLocked="Y" ListPrice="4727.00" RetailPrice="7878.00" UnitPrice="4727.00"/>
+        <Extn ExtnEAN="9165113000543" ExtnGSTValue="0.00" ExtnIsPrebooked="N" ExtnIsRestrictedFlag="N" ExtnPromotionID="886306" ExtnReportingHSNCode="6206"/>
+        <PersonInfoShipTo AddressLine1="7889dqwwwwwwwwwwwwwwwwwwwwwwww" AddressLine2="kasavanhalli" City="BANGALORE" Company="" Country="IN" DayPhone="9902456215" EMailID="rashmi.anand@ril.com" FirstName="Rashmi" IsCommercialAddress="N" LastName="anand" MobilePhone="9902456215" OtherPhone="" State="KAR" ZipCode="560066"/>
+        <ShipNode ExportTaxpayerId="05AAACA6460B2Z9" NodeType="Store" ShipnodeKey="A02C">
+        <ShipNodePersonInfo AddressLine1="Trends - Ascendas" AddressLine2="Square Mall" AddressLine3="Whitefield Main Road. itpl" AddressLine4="" AddressLine5="" AddressLine6="" AlternateEmailID="" Beeper="" City="Bangalore" Company="" Country="IN" DayFaxNo="" DayPhone="9035777119" Department="" EMailID="harikrishnarecharla@gmail.com" EveningFaxNo="" EveningPhone="" FirstName="Trends" HttpUrl="" JobTitle="" LastName="2022" MiddleName="June" MobilePhone="9909090915" OtherPhone="" PersonID="" State="KAR" Suffix="" Title="" ZipCode="560066"/>
+        </ShipNode>
+        <OrderLineReservations/>
+        <References>
+        <Reference Name="ColourVariant" Value="460403894_cream"/>
+        <Reference Name="GenericId" Value="460403894"/>
+        <Reference Name="StyleType" Value=""/>
+        <Reference Name="SeasonCode" Value=""/>
+        <Reference Name="BrickFit" Value="Slim Fit"/>
+        <Reference Name="FitType" Value=""/>
+        <Reference Name="Brand" Value="raymond"/>
+        <Reference Name="Brick" Value="830216013"/>
+        <Reference Name="Vendor" Value=""/>
+        </References>
+        <OrderDates>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="EDD" RequestedDate="2023-02-23T00:00:00+05:30"/>
+        <OrderDate DateTypeId="EHD"/>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="PSD"/>
+        </OrderDates>
+        <ItemDetails CanUseAsServiceTool="N" GlobalItemID="" IsItemSuperseded="N" ItemGroupCode="PROD" ItemID="460407277002" ItemKey="20200514114542514408923" OrganizationCode="RIL" UnitOfMeasure="EACH">
+        <PrimaryInformation AllowGiftWrap="1" ColorCode="Gold" CostCurrency="INR" CountryOfOrigin="IN" Description="" DisplayItemDescription="Checks Slim Fit Shirts" ExtendedDescription="" ItemType="NonHeavy" ManufacturerName="rilfnlProductCatalog" PrimarySupplier="" ProductLine="830216013" ShortDescription="Checks Slim Fit Shirts" SizeCode="30" Status="3000" TaxableFlag="N" UnitCost="7878.00" UnitHeight="0.00" UnitHeightUOM="CM" UnitLength="0.00" UnitLengthUOM="CM" UnitVolume="0.00" UnitVolumeUOM="CUCENTIMETER" UnitWeight="30.00" UnitWeightUOM="GRAM" UnitWidth="0.00" UnitWidthUOM="CM"/>
+        <Extn ExtnBrandName="RAYMOND" ExtnComponentCount="34.00" ExtnDelistedFlag="N" ExtnImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg" ExtnMrp="7878.00" ExtnPDPImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg" ExtnSAPColor="Gold" ExtnSegmentType="Men" ExtnSize="30" ExtnSizeDisplayType="BRAND" ExtnSizeFormat="IN" ExtnUnitVolumetricWeight="12167.00"/>
+        <ClassificationCodes ECCNNo="9165113000543" TaxProductCode="6206"/>
+        </ItemDetails>
+        <LineCharges>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Promotion" ChargeName="VoucherDiscount" ChargeNameKey="2015073115322332613" ChargePerLine="0.00" ChargePerUnit="66.62" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Shipping" ChargeName="Shipping" ChargeNameKey="2015073115325832625" ChargePerLine="0.00" ChargePerUnit="34.00" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="AjioPromotion" ChargeNameKey="20191226144643402085" ChargePerLine="0.00" ChargePerUnit="787.75" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="SellerPromotion" ChargeNameKey="20191226144628402084" ChargePerLine="0.00" ChargePerUnit="2363.25" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        </LineCharges>
+        <LineTaxes/>
+        </OrderLine>
+        <OrderLine CarrierAccountNo="SURFACE" CarrierServiceCode="SURFACE" DeliveryMethod="SHP" FulfillmentType="JIT" GiftWrap="N" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="3" ReservationID="" SCAC="ECOM" ShipNode="A02C">
+        <Item ItemID="460407276004" ProductClass="GOOD" UnitOfMeasure="EACH"/>
+        <LinePriceInfo IsLinePriceForInformationOnly="N" IsPriceLocked="Y" ListPrice="4727.00" RetailPrice="7878.00" UnitPrice="4727.00"/>
+        <Extn ExtnEAN="9165113000543" ExtnGSTValue="0.00" ExtnIsPrebooked="N" ExtnIsRestrictedFlag="N" ExtnPromotionID="886306" ExtnReportingHSNCode="6206"/>
+        <PersonInfoShipTo AddressLine1="7889dqwwwwwwwwwwwwwwwwwwwwwwww" AddressLine2="kasavanhalli" City="BANGALORE" Company="" Country="IN" DayPhone="9902456215" EMailID="rashmi.anand@ril.com" FirstName="Rashmi" IsCommercialAddress="N" LastName="anand" MobilePhone="9902456215" OtherPhone="" State="KAR" ZipCode="560066"/>
+        <ShipNode ExportTaxpayerId="05AAACA6460B2Z9" NodeType="Store" ShipnodeKey="A02C">
+        <ShipNodePersonInfo AddressLine1="Trends - Ascendas" AddressLine2="Square Mall" AddressLine3="Whitefield Main Road. itpl" AddressLine4="" AddressLine5="" AddressLine6="" AlternateEmailID="" Beeper="" City="Bangalore" Company="" Country="IN" DayFaxNo="" DayPhone="9035777119" Department="" EMailID="harikrishnarecharla@gmail.com" EveningFaxNo="" EveningPhone="" FirstName="Trends" HttpUrl="" JobTitle="" LastName="2022" MiddleName="June" MobilePhone="9909090915" OtherPhone="" PersonID="" State="KAR" Suffix="" Title="" ZipCode="560066"/>
+        </ShipNode>
+        <OrderLineReservations/>
+        <References>
+        <Reference Name="ColourVariant" Value="460403894_cream"/>
+        <Reference Name="GenericId" Value="460403894"/>
+        <Reference Name="StyleType" Value=""/>
+        <Reference Name="SeasonCode" Value=""/>
+        <Reference Name="BrickFit" Value="Slim Fit"/>
+        <Reference Name="FitType" Value=""/>
+        <Reference Name="Brand" Value="raymond"/>
+        <Reference Name="Brick" Value="830216013"/>
+        <Reference Name="Vendor" Value=""/>
+        </References>
+        <OrderDates>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="EDD" RequestedDate="2023-02-23T00:00:00+05:30"/>
+        <OrderDate DateTypeId="EHD"/>
+        <OrderDate ActualDate="2023-02-23T00:00:00+05:30" DateTypeId="PSD"/>
+        </OrderDates>
+        <ItemDetails CanUseAsServiceTool="N" GlobalItemID="" IsItemSuperseded="N" ItemGroupCode="PROD" ItemID="460407276004" ItemKey="20200514114542514408923" OrganizationCode="RIL" UnitOfMeasure="EACH">
+        <PrimaryInformation AllowGiftWrap="1" ColorCode="Gold" CostCurrency="INR" CountryOfOrigin="IN" Description="" DisplayItemDescription="Checks Slim Fit Shirts" ExtendedDescription="" ItemType="NonHeavy" ManufacturerName="rilfnlProductCatalog" PrimarySupplier="" ProductLine="830216013" ShortDescription="Checks Slim Fit Shirts" SizeCode="30" Status="3000" TaxableFlag="N" UnitCost="7878.00" UnitHeight="0.00" UnitHeightUOM="CM" UnitLength="0.00" UnitLengthUOM="CM" UnitVolume="0.00" UnitVolumeUOM="CUCENTIMETER" UnitWeight="30.00" UnitWeightUOM="GRAM" UnitWidth="0.00" UnitWidthUOM="CM"/>
+        <Extn ExtnBrandName="RAYMOND" ExtnComponentCount="34.00" ExtnDelistedFlag="N" ExtnImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg" ExtnMrp="7878.00" ExtnPDPImageURL="https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg" ExtnSAPColor="Gold" ExtnSegmentType="Men" ExtnSize="30" ExtnSizeDisplayType="BRAND" ExtnSizeFormat="IN" ExtnUnitVolumetricWeight="12167.00"/>
+        <ClassificationCodes ECCNNo="9165113000543" TaxProductCode="6206"/>
+        </ItemDetails>
+        <LineCharges>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Promotion" ChargeName="VoucherDiscount" ChargeNameKey="2015073115322332613" ChargePerLine="0.00" ChargePerUnit="66.62" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="Shipping" ChargeName="Shipping" ChargeNameKey="2015073115325832625" ChargePerLine="0.00" ChargePerUnit="34.00" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="AjioPromotion" ChargeNameKey="20191226144643402085" ChargePerLine="0.00" ChargePerUnit="787.75" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        <LineCharge ChargeAmount="866.62" ChargeCategory="SELLER_PROMO" ChargeName="SellerPromotion" ChargeNameKey="20191226144628402084" ChargePerLine="0.00" ChargePerUnit="2363.25" InvoicedChargeAmount="0.00" InvoicedChargePerLine="0.00" InvoicedChargePerUnit="0.00" IsBillable="Y" IsDiscount="N" IsManual="Y" IsShippingCharge="N" Reference="34.0" RemainingChargeAmount="34.00" RemainingChargePerLine="0.00" RemainingChargePerUnit="34.00"/>
+        </LineCharges>
+        <LineTaxes/>
+        </OrderLine>
+        </OrderLines>
+        <PersonInfoBillTo AddressLine1="7889dqwwwwwwwwwwwwwwwwwwwwwwww" AddressLine2="kasavanhalli" City="BANGALORE" Company="" Country="IN" DayPhone="9902456215" EMailID="rashmi.anand@ril.com" FirstName="Rashmi" IsCommercialAddress="N" LastName="anand" MobilePhone="9686564181" OtherPhone="" State="KAR" ZipCode="560066"/>
+        <References/>
+        <PaymentMethods>
+        <PaymentMethod CreditCardName="NETS" CreditCardNo="PSXK9WsXdEe2wIcnkUlDlVA" CreditCardType="TEST_UAT" CustomerPONo="pay_5caf2fa0-777f-11ed-b021-c3b58912441b" MaxChargeLimit="257.0" PaymentReference1="FNA6300898923" PaymentReference2="932" PaymentReference3="2022-12-09T10:37:29.937+05:30" PaymentType="COD" UnlimitedCharges="N">
+        <PaymentDetailsList>
+        <PaymentDetails AuthorizationID="FNA6300898923" ChargeType="CHARGE" CollectionDate="2022-12-09T10:37:29.937+05:30" ProcessedAmount="932" RequestAmount="932" RequestId="FNA6300898923" TranReturnCode="success">
+        <Extn/>
+        </PaymentDetails>
+        </PaymentDetailsList>
+        </PaymentMethod>
+        </PaymentMethods>
+        <PersonInfoShipTo AddressLine1="7889dqwwwwwwwwwwwwwwwwwwwwwwww" AddressLine2="kasavanhalli" City="BANGALORE" Country="IN" DayPhone="9902456215" EMailID="rashmi.anand@ril.com" FirstName="Rashmi" LastName="anand" MobilePhone="9902456215" State="KAR" ZipCode="560066"/>
+        <OrderDates/>
+        </Order>
+
+
+
+testUsingJson:
+  - testcaseId: TEST-0002
+    testcaseName: "Test POJO creation"
+    request:
+      body: {
+        "Order": {
+          "-AllocationRuleID": "SCH_Fnl",
+          "-AuthorizedClient": "Hybris",
+          "-BillToID": "9902456215",
+          "-DocumentType": "0001",
+          "-EnterpriseCode": "FnL",
+          "-EntryType": "STOREFRONT",
+          "-OrderDate": "2023-02-23T12:53:50.583+05:30",
+          "-OrderNo": "AUTO91134329",
+          "-OrderType": "NONCOD",
+          "-PaymentRuleId": "PAY_RULE_FnL_COD",
+          "-SellerOrganizationCode": "FnL",
+          "PriceInfo": {
+            "-Currency": "INR",
+            "-self-closing": "true"
+          },
+          "Extn": {
+            "-ExtnCustomerFirstName": "Rashmi anand",
+            "-ExtnCustomerID": "d7e07719-e811-4f03-ba4a-d2ce0a4bd524",
+            "-ExtnCustomerScreenName": "jvjvjvjgjvj",
+            "-ExtnIsFreeShipping": "N",
+            "-ExtnIsR1Applicable": "Y",
+            "-ExtnRefundExternal": "Y",
+            "-ExtnShippingCharge": "34.00",
+            "-self-closing": "true"
+          },
+          "OrderLines": {
+            "OrderLine": [
+              {
+                "-CarrierAccountNo": "SURFACE",
+                "-CarrierServiceCode": "SURFACE",
+                "-DeliveryMethod": "SHP",
+                "-FulfillmentType": "JIT",
+                "-GiftWrap": "N",
+                "-ItemGroupCode": "PROD",
+                "-OrderedQty": "1",
+                "-PrimeLineNo": "1",
+                "-ReservationID": "",
+                "-SCAC": "ECOM",
+                "-ShipNode": "A02C",
+                "Item": {
+                  "-ItemID": "460407276003",
+                  "-ProductClass": "GOOD",
+                  "-UnitOfMeasure": "EACH",
+                  "-self-closing": "true"
+                },
+                "LinePriceInfo": {
+                  "-IsLinePriceForInformationOnly": "N",
+                  "-IsPriceLocked": "Y",
+                  "-ListPrice": "4727.00",
+                  "-RetailPrice": "7878.00",
+                  "-UnitPrice": "4727.00",
+                  "-self-closing": "true"
+                },
+                "Extn": {
+                  "-ExtnEAN": "9165113000543",
+                  "-ExtnGSTValue": "0.00",
+                  "-ExtnIsPrebooked": "N",
+                  "-ExtnIsRestrictedFlag": "N",
+                  "-ExtnPromotionID": "886306",
+                  "-ExtnReportingHSNCode": "6206",
+                  "-self-closing": "true"
+                },
+                "PersonInfoShipTo": {
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww",
+                  "-AddressLine2": "kasavanhalli",
+                  "-City": "BANGALORE",
+                  "-Company": "",
+                  "-Country": "IN",
+                  "-DayPhone": "9902456215",
+                  "-EMailID": "rashmi.anand@ril.com",
+                  "-FirstName": "Rashmi",
+                  "-IsCommercialAddress": "N",
+                  "-LastName": "anand",
+                  "-MobilePhone": "9902456215",
+                  "-OtherPhone": "",
+                  "-State": "KAR",
+                  "-ZipCode": "560066",
+                  "-self-closing": "true"
+                },
+                "ShipNode": {
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9",
+                  "-NodeType": "Store",
+                  "-ShipnodeKey": "A02C",
+                  "ShipNodePersonInfo": {
+                    "-AddressLine1": "Trends - Ascendas",
+                    "-AddressLine2": "Square Mall",
+                    "-AddressLine3": "Whitefield Main Road. itpl",
+                    "-AddressLine4": "",
+                    "-AddressLine5": "",
+                    "-AddressLine6": "",
+                    "-AlternateEmailID": "",
+                    "-Beeper": "",
+                    "-City": "Bangalore",
+                    "-Company": "",
+                    "-Country": "IN",
+                    "-DayFaxNo": "",
+                    "-DayPhone": "9035777119",
+                    "-Department": "",
+                    "-EMailID": "harikrishnarecharla@gmail.com",
+                    "-EveningFaxNo": "",
+                    "-EveningPhone": "",
+                    "-FirstName": "Trends",
+                    "-HttpUrl": "",
+                    "-JobTitle": "",
+                    "-LastName": "2022",
+                    "-MiddleName": "June",
+                    "-MobilePhone": "9909090915",
+                    "-OtherPhone": "",
+                    "-PersonID": "",
+                    "-State": "KAR",
+                    "-Suffix": "",
+                    "-Title": "",
+                    "-ZipCode": "560066",
+                    "-self-closing": "true"
+                  }
+                },
+                "OrderLineReservations": {
+                  "-self-closing": "true"
+                },
+                "References": {
+                  "Reference": [
+                    {
+                      "-Name": "ColourVariant",
+                      "-Value": "460403894_cream",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "GenericId",
+                      "-Value": "460403894",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "StyleType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "SeasonCode",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "BrickFit",
+                      "-Value": "Slim Fit",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "FitType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brand",
+                      "-Value": "raymond",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brick",
+                      "-Value": "830216013",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Vendor",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "OrderDates": {
+                  "OrderDate": [
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "EDD",
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-DateTypeId": "EHD",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "PSD",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "ItemDetails": {
+                  "-CanUseAsServiceTool": "N",
+                  "-GlobalItemID": "",
+                  "-IsItemSuperseded": "N",
+                  "-ItemGroupCode": "PROD",
+                  "-ItemID": "460407276003",
+                  "-ItemKey": "20200514114542514408923",
+                  "-OrganizationCode": "RIL",
+                  "-UnitOfMeasure": "EACH",
+                  "PrimaryInformation": {
+                    "-AllowGiftWrap": "1",
+                    "-ColorCode": "Gold",
+                    "-CostCurrency": "INR",
+                    "-CountryOfOrigin": "IN",
+                    "-Description": "",
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts",
+                    "-ExtendedDescription": "",
+                    "-ItemType": "NonHeavy",
+                    "-ManufacturerName": "rilfnlProductCatalog",
+                    "-PrimarySupplier": "",
+                    "-ProductLine": "830216013",
+                    "-ShortDescription": "Checks Slim Fit Shirts",
+                    "-SizeCode": "30",
+                    "-Status": "3000",
+                    "-TaxableFlag": "N",
+                    "-UnitCost": "7878.00",
+                    "-UnitHeight": "0.00",
+                    "-UnitHeightUOM": "CM",
+                    "-UnitLength": "0.00",
+                    "-UnitLengthUOM": "CM",
+                    "-UnitVolume": "0.00",
+                    "-UnitVolumeUOM": "CUCENTIMETER",
+                    "-UnitWeight": "30.00",
+                    "-UnitWeightUOM": "GRAM",
+                    "-UnitWidth": "0.00",
+                    "-UnitWidthUOM": "CM",
+                    "-self-closing": "true"
+                  },
+                  "Extn": {
+                    "-ExtnBrandName": "RAYMOND",
+                    "-ExtnComponentCount": "34.00",
+                    "-ExtnDelistedFlag": "N",
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg",
+                    "-ExtnMrp": "7878.00",
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg",
+                    "-ExtnSAPColor": "Gold",
+                    "-ExtnSegmentType": "Men",
+                    "-ExtnSize": "30",
+                    "-ExtnSizeDisplayType": "BRAND",
+                    "-ExtnSizeFormat": "IN",
+                    "-ExtnUnitVolumetricWeight": "12167.00",
+                    "-self-closing": "true"
+                  },
+                  "ClassificationCodes": {
+                    "-ECCNNo": "9165113000543",
+                    "-TaxProductCode": "6206",
+                    "-self-closing": "true"
+                  }
+                },
+                "LineCharges": {
+                  "LineCharge": [
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Promotion",
+                      "-ChargeName": "VoucherDiscount",
+                      "-ChargeNameKey": "2015073115322332613",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "866.62",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Shipping",
+                      "-ChargeName": "Shipping",
+                      "-ChargeNameKey": "2015073115325832625",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "34.00",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "AjioPromotion",
+                      "-ChargeNameKey": "20191226144643402085",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "787.75",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "SellerPromotion",
+                      "-ChargeNameKey": "20191226144628402084",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "2363.25",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "LineTaxes": {
+                  "-self-closing": "true"
+                }
+              },
+              {
+                "-CarrierAccountNo": "SURFACE",
+                "-CarrierServiceCode": "SURFACE",
+                "-DeliveryMethod": "SHP",
+                "-FulfillmentType": "JIT",
+                "-GiftWrap": "N",
+                "-ItemGroupCode": "PROD",
+                "-OrderedQty": "1",
+                "-PrimeLineNo": "2",
+                "-ReservationID": "",
+                "-SCAC": "ECOM",
+                "-ShipNode": "A02C",
+                "Item": {
+                  "-ItemID": "460407277002",
+                  "-ProductClass": "GOOD",
+                  "-UnitOfMeasure": "EACH",
+                  "-self-closing": "true"
+                },
+                "LinePriceInfo": {
+                  "-IsLinePriceForInformationOnly": "N",
+                  "-IsPriceLocked": "Y",
+                  "-ListPrice": "4727.00",
+                  "-RetailPrice": "7878.00",
+                  "-UnitPrice": "4727.00",
+                  "-self-closing": "true"
+                },
+                "Extn": {
+                  "-ExtnEAN": "9165113000543",
+                  "-ExtnGSTValue": "0.00",
+                  "-ExtnIsPrebooked": "N",
+                  "-ExtnIsRestrictedFlag": "N",
+                  "-ExtnPromotionID": "886306",
+                  "-ExtnReportingHSNCode": "6206",
+                  "-self-closing": "true"
+                },
+                "PersonInfoShipTo": {
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww",
+                  "-AddressLine2": "kasavanhalli",
+                  "-City": "BANGALORE",
+                  "-Company": "",
+                  "-Country": "IN",
+                  "-DayPhone": "9902456215",
+                  "-EMailID": "rashmi.anand@ril.com",
+                  "-FirstName": "Rashmi",
+                  "-IsCommercialAddress": "N",
+                  "-LastName": "anand",
+                  "-MobilePhone": "9902456215",
+                  "-OtherPhone": "",
+                  "-State": "KAR",
+                  "-ZipCode": "560066",
+                  "-self-closing": "true"
+                },
+                "ShipNode": {
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9",
+                  "-NodeType": "Store",
+                  "-ShipnodeKey": "A02C",
+                  "ShipNodePersonInfo": {
+                    "-AddressLine1": "Trends - Ascendas",
+                    "-AddressLine2": "Square Mall",
+                    "-AddressLine3": "Whitefield Main Road. itpl",
+                    "-AddressLine4": "",
+                    "-AddressLine5": "",
+                    "-AddressLine6": "",
+                    "-AlternateEmailID": "",
+                    "-Beeper": "",
+                    "-City": "Bangalore",
+                    "-Company": "",
+                    "-Country": "IN",
+                    "-DayFaxNo": "",
+                    "-DayPhone": "9035777119",
+                    "-Department": "",
+                    "-EMailID": "harikrishnarecharla@gmail.com",
+                    "-EveningFaxNo": "",
+                    "-EveningPhone": "",
+                    "-FirstName": "Trends",
+                    "-HttpUrl": "",
+                    "-JobTitle": "",
+                    "-LastName": "2022",
+                    "-MiddleName": "June",
+                    "-MobilePhone": "9909090915",
+                    "-OtherPhone": "",
+                    "-PersonID": "",
+                    "-State": "KAR",
+                    "-Suffix": "",
+                    "-Title": "",
+                    "-ZipCode": "560066",
+                    "-self-closing": "true"
+                  }
+                },
+                "OrderLineReservations": {
+                  "-self-closing": "true"
+                },
+                "References": {
+                  "Reference": [
+                    {
+                      "-Name": "ColourVariant",
+                      "-Value": "460403894_cream",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "GenericId",
+                      "-Value": "460403894",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "StyleType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "SeasonCode",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "BrickFit",
+                      "-Value": "Slim Fit",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "FitType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brand",
+                      "-Value": "raymond",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brick",
+                      "-Value": "830216013",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Vendor",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "OrderDates": {
+                  "OrderDate": [
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "EDD",
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-DateTypeId": "EHD",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "PSD",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "ItemDetails": {
+                  "-CanUseAsServiceTool": "N",
+                  "-GlobalItemID": "",
+                  "-IsItemSuperseded": "N",
+                  "-ItemGroupCode": "PROD",
+                  "-ItemID": "460407277002",
+                  "-ItemKey": "20200514114542514408923",
+                  "-OrganizationCode": "RIL",
+                  "-UnitOfMeasure": "EACH",
+                  "PrimaryInformation": {
+                    "-AllowGiftWrap": "1",
+                    "-ColorCode": "Gold",
+                    "-CostCurrency": "INR",
+                    "-CountryOfOrigin": "IN",
+                    "-Description": "",
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts",
+                    "-ExtendedDescription": "",
+                    "-ItemType": "NonHeavy",
+                    "-ManufacturerName": "rilfnlProductCatalog",
+                    "-PrimarySupplier": "",
+                    "-ProductLine": "830216013",
+                    "-ShortDescription": "Checks Slim Fit Shirts",
+                    "-SizeCode": "30",
+                    "-Status": "3000",
+                    "-TaxableFlag": "N",
+                    "-UnitCost": "7878.00",
+                    "-UnitHeight": "0.00",
+                    "-UnitHeightUOM": "CM",
+                    "-UnitLength": "0.00",
+                    "-UnitLengthUOM": "CM",
+                    "-UnitVolume": "0.00",
+                    "-UnitVolumeUOM": "CUCENTIMETER",
+                    "-UnitWeight": "30.00",
+                    "-UnitWeightUOM": "GRAM",
+                    "-UnitWidth": "0.00",
+                    "-UnitWidthUOM": "CM",
+                    "-self-closing": "true"
+                  },
+                  "Extn": {
+                    "-ExtnBrandName": "RAYMOND",
+                    "-ExtnComponentCount": "34.00",
+                    "-ExtnDelistedFlag": "N",
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg",
+                    "-ExtnMrp": "7878.00",
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg",
+                    "-ExtnSAPColor": "Gold",
+                    "-ExtnSegmentType": "Men",
+                    "-ExtnSize": "30",
+                    "-ExtnSizeDisplayType": "BRAND",
+                    "-ExtnSizeFormat": "IN",
+                    "-ExtnUnitVolumetricWeight": "12167.00",
+                    "-self-closing": "true"
+                  },
+                  "ClassificationCodes": {
+                    "-ECCNNo": "9165113000543",
+                    "-TaxProductCode": "6206",
+                    "-self-closing": "true"
+                  }
+                },
+                "LineCharges": {
+                  "LineCharge": [
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Promotion",
+                      "-ChargeName": "VoucherDiscount",
+                      "-ChargeNameKey": "2015073115322332613",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "66.62",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Shipping",
+                      "-ChargeName": "Shipping",
+                      "-ChargeNameKey": "2015073115325832625",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "34.00",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "AjioPromotion",
+                      "-ChargeNameKey": "20191226144643402085",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "787.75",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "SellerPromotion",
+                      "-ChargeNameKey": "20191226144628402084",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "2363.25",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "LineTaxes": {
+                  "-self-closing": "true"
+                }
+              },
+              {
+                "-CarrierAccountNo": "SURFACE",
+                "-CarrierServiceCode": "SURFACE",
+                "-DeliveryMethod": "SHP",
+                "-FulfillmentType": "JIT",
+                "-GiftWrap": "N",
+                "-ItemGroupCode": "PROD",
+                "-OrderedQty": "1",
+                "-PrimeLineNo": "3",
+                "-ReservationID": "",
+                "-SCAC": "ECOM",
+                "-ShipNode": "A02C",
+                "Item": {
+                  "-ItemID": "460407276004",
+                  "-ProductClass": "GOOD",
+                  "-UnitOfMeasure": "EACH",
+                  "-self-closing": "true"
+                },
+                "LinePriceInfo": {
+                  "-IsLinePriceForInformationOnly": "N",
+                  "-IsPriceLocked": "Y",
+                  "-ListPrice": "4727.00",
+                  "-RetailPrice": "7878.00",
+                  "-UnitPrice": "4727.00",
+                  "-self-closing": "true"
+                },
+                "Extn": {
+                  "-ExtnEAN": "9165113000543",
+                  "-ExtnGSTValue": "0.00",
+                  "-ExtnIsPrebooked": "N",
+                  "-ExtnIsRestrictedFlag": "N",
+                  "-ExtnPromotionID": "886306",
+                  "-ExtnReportingHSNCode": "6206",
+                  "-self-closing": "true"
+                },
+                "PersonInfoShipTo": {
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww",
+                  "-AddressLine2": "kasavanhalli",
+                  "-City": "BANGALORE",
+                  "-Company": "",
+                  "-Country": "IN",
+                  "-DayPhone": "9902456215",
+                  "-EMailID": "rashmi.anand@ril.com",
+                  "-FirstName": "Rashmi",
+                  "-IsCommercialAddress": "N",
+                  "-LastName": "anand",
+                  "-MobilePhone": "9902456215",
+                  "-OtherPhone": "",
+                  "-State": "KAR",
+                  "-ZipCode": "560066",
+                  "-self-closing": "true"
+                },
+                "ShipNode": {
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9",
+                  "-NodeType": "Store",
+                  "-ShipnodeKey": "A02C",
+                  "ShipNodePersonInfo": {
+                    "-AddressLine1": "Trends - Ascendas",
+                    "-AddressLine2": "Square Mall",
+                    "-AddressLine3": "Whitefield Main Road. itpl",
+                    "-AddressLine4": "",
+                    "-AddressLine5": "",
+                    "-AddressLine6": "",
+                    "-AlternateEmailID": "",
+                    "-Beeper": "",
+                    "-City": "Bangalore",
+                    "-Company": "",
+                    "-Country": "IN",
+                    "-DayFaxNo": "",
+                    "-DayPhone": "9035777119",
+                    "-Department": "",
+                    "-EMailID": "harikrishnarecharla@gmail.com",
+                    "-EveningFaxNo": "",
+                    "-EveningPhone": "",
+                    "-FirstName": "Trends",
+                    "-HttpUrl": "",
+                    "-JobTitle": "",
+                    "-LastName": "2022",
+                    "-MiddleName": "June",
+                    "-MobilePhone": "9909090915",
+                    "-OtherPhone": "",
+                    "-PersonID": "",
+                    "-State": "KAR",
+                    "-Suffix": "",
+                    "-Title": "",
+                    "-ZipCode": "560066",
+                    "-self-closing": "true"
+                  }
+                },
+                "OrderLineReservations": {
+                  "-self-closing": "true"
+                },
+                "References": {
+                  "Reference": [
+                    {
+                      "-Name": "ColourVariant",
+                      "-Value": "460403894_cream",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "GenericId",
+                      "-Value": "460403894",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "StyleType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "SeasonCode",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "BrickFit",
+                      "-Value": "Slim Fit",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "FitType",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brand",
+                      "-Value": "raymond",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Brick",
+                      "-Value": "830216013",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-Name": "Vendor",
+                      "-Value": "",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "OrderDates": {
+                  "OrderDate": [
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "EDD",
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-DateTypeId": "EHD",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ActualDate": "2023-02-23T00:00:00+05:30",
+                      "-DateTypeId": "PSD",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "ItemDetails": {
+                  "-CanUseAsServiceTool": "N",
+                  "-GlobalItemID": "",
+                  "-IsItemSuperseded": "N",
+                  "-ItemGroupCode": "PROD",
+                  "-ItemID": "460407276004",
+                  "-ItemKey": "20200514114542514408923",
+                  "-OrganizationCode": "RIL",
+                  "-UnitOfMeasure": "EACH",
+                  "PrimaryInformation": {
+                    "-AllowGiftWrap": "1",
+                    "-ColorCode": "Gold",
+                    "-CostCurrency": "INR",
+                    "-CountryOfOrigin": "IN",
+                    "-Description": "",
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts",
+                    "-ExtendedDescription": "",
+                    "-ItemType": "NonHeavy",
+                    "-ManufacturerName": "rilfnlProductCatalog",
+                    "-PrimarySupplier": "",
+                    "-ProductLine": "830216013",
+                    "-ShortDescription": "Checks Slim Fit Shirts",
+                    "-SizeCode": "30",
+                    "-Status": "3000",
+                    "-TaxableFlag": "N",
+                    "-UnitCost": "7878.00",
+                    "-UnitHeight": "0.00",
+                    "-UnitHeightUOM": "CM",
+                    "-UnitLength": "0.00",
+                    "-UnitLengthUOM": "CM",
+                    "-UnitVolume": "0.00",
+                    "-UnitVolumeUOM": "CUCENTIMETER",
+                    "-UnitWeight": "30.00",
+                    "-UnitWeightUOM": "GRAM",
+                    "-UnitWidth": "0.00",
+                    "-UnitWidthUOM": "CM",
+                    "-self-closing": "true"
+                  },
+                  "Extn": {
+                    "-ExtnBrandName": "RAYMOND",
+                    "-ExtnComponentCount": "34.00",
+                    "-ExtnDelistedFlag": "N",
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg",
+                    "-ExtnMrp": "7878.00",
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg",
+                    "-ExtnSAPColor": "Gold",
+                    "-ExtnSegmentType": "Men",
+                    "-ExtnSize": "30",
+                    "-ExtnSizeDisplayType": "BRAND",
+                    "-ExtnSizeFormat": "IN",
+                    "-ExtnUnitVolumetricWeight": "12167.00",
+                    "-self-closing": "true"
+                  },
+                  "ClassificationCodes": {
+                    "-ECCNNo": "9165113000543",
+                    "-TaxProductCode": "6206",
+                    "-self-closing": "true"
+                  }
+                },
+                "LineCharges": {
+                  "LineCharge": [
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Promotion",
+                      "-ChargeName": "VoucherDiscount",
+                      "-ChargeNameKey": "2015073115322332613",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "66.62",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "Shipping",
+                      "-ChargeName": "Shipping",
+                      "-ChargeNameKey": "2015073115325832625",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "34.00",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "AjioPromotion",
+                      "-ChargeNameKey": "20191226144643402085",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "787.75",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    },
+                    {
+                      "-ChargeAmount": "866.62",
+                      "-ChargeCategory": "SELLER_PROMO",
+                      "-ChargeName": "SellerPromotion",
+                      "-ChargeNameKey": "20191226144628402084",
+                      "-ChargePerLine": "0.00",
+                      "-ChargePerUnit": "2363.25",
+                      "-InvoicedChargeAmount": "0.00",
+                      "-InvoicedChargePerLine": "0.00",
+                      "-InvoicedChargePerUnit": "0.00",
+                      "-IsBillable": "Y",
+                      "-IsDiscount": "N",
+                      "-IsManual": "Y",
+                      "-IsShippingCharge": "N",
+                      "-Reference": "34.0",
+                      "-RemainingChargeAmount": "34.00",
+                      "-RemainingChargePerLine": "0.00",
+                      "-RemainingChargePerUnit": "34.00",
+                      "-self-closing": "true"
+                    }
+                  ]
+                },
+                "LineTaxes": {
+                  "-self-closing": "true"
+                }
+              }
+            ]
+          },
+          "PersonInfoBillTo": {
+            "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww",
+            "-AddressLine2": "kasavanhalli",
+            "-City": "BANGALORE",
+            "-Company": "",
+            "-Country": "IN",
+            "-DayPhone": "9902456215",
+            "-EMailID": "rashmi.anand@ril.com",
+            "-FirstName": "Rashmi",
+            "-IsCommercialAddress": "N",
+            "-LastName": "anand",
+            "-MobilePhone": "9686564181",
+            "-OtherPhone": "",
+            "-State": "KAR",
+            "-ZipCode": "560066",
+            "-self-closing": "true"
+          },
+          "References": {
+            "-self-closing": "true"
+          },
+          "PaymentMethods": {
+            "PaymentMethod": {
+              "-CreditCardName": "NETS",
+              "-CreditCardNo": "PSXK9WsXdEe2wIcnkUlDlVA",
+              "-CreditCardType": "TEST_UAT",
+              "-CustomerPONo": "pay_5caf2fa0-777f-11ed-b021-c3b58912441b",
+              "-MaxChargeLimit": "257.0",
+              "-PaymentReference1": "FNA6300898923",
+              "-PaymentReference2": "932",
+              "-PaymentReference3": "2022-12-09T10:37:29.937+05:30",
+              "-PaymentType": "COD",
+              "-UnlimitedCharges": "N",
+              "PaymentDetailsList": {
+                "PaymentDetails": {
+                  "-AuthorizationID": "FNA6300898923",
+                  "-ChargeType": "CHARGE",
+                  "-CollectionDate": "2022-12-09T10:37:29.937+05:30",
+                  "-ProcessedAmount": "932",
+                  "-RequestAmount": "932",
+                  "-RequestId": "FNA6300898923",
+                  "-TranReturnCode": "success",
+                  "Extn": {
+                    "-self-closing": "true"
+                  }
+                }
+              }
+            }
+          },
+          "PersonInfoShipTo": {
+            "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww",
+            "-AddressLine2": "kasavanhalli",
+            "-City": "BANGALORE",
+            "-Country": "IN",
+            "-DayPhone": "9902456215",
+            "-EMailID": "rashmi.anand@ril.com",
+            "-FirstName": "Rashmi",
+            "-LastName": "anand",
+            "-MobilePhone": "9902456215",
+            "-State": "KAR",
+            "-ZipCode": "560066",
+            "-self-closing": "true"
+          },
+          "OrderDates": {
+            "-self-closing": "true"
+          }
+        },
+        "#standalone": "yes"
+      }
+testUsingYaml:
+  - testcaseId: TEST-0003
+    testcaseName: "Test POJO creation"
+    request:
+      body:
+        Order:
+          "-AllocationRuleID": "SCH_Fnl"
+          "-AuthorizedClient": "Hybris"
+          "-BillToID": "9902456215"
+          "-DocumentType": "0001"
+          "-EnterpriseCode": "FnL"
+          "-EntryType": "STOREFRONT"
+          "-OrderDate": "2023-02-23T12:53:50.583+05:30"
+          "-OrderNo": "AUTO91134329"
+          "-OrderType": "NONCOD"
+          "-PaymentRuleId": "PAY_RULE_FnL_COD"
+          "-SellerOrganizationCode": "FnL"
+          PriceInfo:
+            "-Currency": "INR"
+            "-self-closing": "true"
+          Extn:
+            "-ExtnCustomerFirstName": "Rashmi anand"
+            "-ExtnCustomerID": "d7e07719-e811-4f03-ba4a-d2ce0a4bd524"
+            "-ExtnCustomerScreenName": "jvjvjvjgjvj"
+            "-ExtnIsFreeShipping": "N"
+            "-ExtnIsR1Applicable": "Y"
+            "-ExtnRefundExternal": "Y"
+            "-ExtnShippingCharge": "34.00"
+            "-self-closing": "true"
+          OrderLines:
+            OrderLine:
+              - "-CarrierAccountNo": "SURFACE"
+                "-CarrierServiceCode": "SURFACE"
+                "-DeliveryMethod": "SHP"
+                "-FulfillmentType": "JIT"
+                "-GiftWrap": "N"
+                "-ItemGroupCode": "PROD"
+                "-OrderedQty": "1"
+                "-PrimeLineNo": "1"
+                "-ReservationID": ""
+                "-SCAC": "ECOM"
+                "-ShipNode": "A02C"
+                Item:
+                  "-ItemID": "460407276003"
+                  "-ProductClass": "GOOD"
+                  "-UnitOfMeasure": "EACH"
+                  "-self-closing": "true"
+                LinePriceInfo:
+                  "-IsLinePriceForInformationOnly": "N"
+                  "-IsPriceLocked": "Y"
+                  "-ListPrice": "4727.00"
+                  "-RetailPrice": "7878.00"
+                  "-UnitPrice": "4727.00"
+                  "-self-closing": "true"
+                Extn:
+                  "-ExtnEAN": "9165113000543"
+                  "-ExtnGSTValue": "0.00"
+                  "-ExtnIsPrebooked": "N"
+                  "-ExtnIsRestrictedFlag": "N"
+                  "-ExtnPromotionID": "886306"
+                  "-ExtnReportingHSNCode": "6206"
+                  "-self-closing": "true"
+                PersonInfoShipTo:
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww"
+                  "-AddressLine2": "kasavanhalli"
+                  "-City": "BANGALORE"
+                  "-Company": ""
+                  "-Country": "IN"
+                  "-DayPhone": "9902456215"
+                  "-EMailID": "rashmi.anand@ril.com"
+                  "-FirstName": "Rashmi"
+                  "-IsCommercialAddress": "N"
+                  "-LastName": "anand"
+                  "-MobilePhone": "9902456215"
+                  "-OtherPhone": ""
+                  "-State": "KAR"
+                  "-ZipCode": "560066"
+                  "-self-closing": "true"
+                ShipNode:
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9"
+                  "-NodeType": "Store"
+                  "-ShipnodeKey": "A02C"
+                  ShipNodePersonInfo:
+                    "-AddressLine1": "Trends - Ascendas"
+                    "-AddressLine2": "Square Mall"
+                    "-AddressLine3": "Whitefield Main Road. itpl"
+                    "-AddressLine4": ""
+                    "-AddressLine5": ""
+                    "-AddressLine6": ""
+                    "-AlternateEmailID": ""
+                    "-Beeper": ""
+                    "-City": "Bangalore"
+                    "-Company": ""
+                    "-Country": "IN"
+                    "-DayFaxNo": ""
+                    "-DayPhone": "9035777119"
+                    "-Department": ""
+                    "-EMailID": "harikrishnarecharla@gmail.com"
+                    "-EveningFaxNo": ""
+                    "-EveningPhone": ""
+                    "-FirstName": "Trends"
+                    "-HttpUrl": ""
+                    "-JobTitle": ""
+                    "-LastName": "2022"
+                    "-MiddleName": "June"
+                    "-MobilePhone": "9909090915"
+                    "-OtherPhone": ""
+                    "-PersonID": ""
+                    "-State": "KAR"
+                    "-Suffix": ""
+                    "-Title": ""
+                    "-ZipCode": "560066"
+                    "-self-closing": "true"
+                OrderLineReservations:
+                  "-self-closing": "true"
+                References:
+                  Reference:
+                    - "-Name": "ColourVariant"
+                      "-Value": "460403894_cream"
+                      "-self-closing": "true"
+                    - "-Name": "GenericId"
+                      "-Value": "460403894"
+                      "-self-closing": "true"
+                    - "-Name": "StyleType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "SeasonCode"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "BrickFit"
+                      "-Value": "Slim Fit"
+                      "-self-closing": "true"
+                    - "-Name": "FitType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "Brand"
+                      "-Value": "raymond"
+                      "-self-closing": "true"
+                    - "-Name": "Brick"
+                      "-Value": "830216013"
+                      "-self-closing": "true"
+                    - "-Name": "Vendor"
+                      "-Value": ""
+                      "-self-closing": "true"
+                OrderDates:
+                  OrderDate:
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "EDD"
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30"
+                      "-self-closing": "true"
+                    - "-DateTypeId": "EHD"
+                      "-self-closing": "true"
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "PSD"
+                      "-self-closing": "true"
+                ItemDetails:
+                  "-CanUseAsServiceTool": "N"
+                  "-GlobalItemID": ""
+                  "-IsItemSuperseded": "N"
+                  "-ItemGroupCode": "PROD"
+                  "-ItemID": "460407276003"
+                  "-ItemKey": "20200514114542514408923"
+                  "-OrganizationCode": "RIL"
+                  "-UnitOfMeasure": "EACH"
+                  PrimaryInformation:
+                    "-AllowGiftWrap": "1"
+                    "-ColorCode": "Gold"
+                    "-CostCurrency": "INR"
+                    "-CountryOfOrigin": "IN"
+                    "-Description": ""
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts"
+                    "-ExtendedDescription": ""
+                    "-ItemType": "NonHeavy"
+                    "-ManufacturerName": "rilfnlProductCatalog"
+                    "-PrimarySupplier": ""
+                    "-ProductLine": "830216013"
+                    "-ShortDescription": "Checks Slim Fit Shirts"
+                    "-SizeCode": "30"
+                    "-Status": "3000"
+                    "-TaxableFlag": "N"
+                    "-UnitCost": "7878.00"
+                    "-UnitHeight": "0.00"
+                    "-UnitHeightUOM": "CM"
+                    "-UnitLength": "0.00"
+                    "-UnitLengthUOM": "CM"
+                    "-UnitVolume": "0.00"
+                    "-UnitVolumeUOM": "CUCENTIMETER"
+                    "-UnitWeight": "30.00"
+                    "-UnitWeightUOM": "GRAM"
+                    "-UnitWidth": "0.00"
+                    "-UnitWidthUOM": "CM"
+                    "-self-closing": "true"
+                  Extn:
+                    "-ExtnBrandName": "RAYMOND"
+                    "-ExtnComponentCount": "34.00"
+                    "-ExtnDelistedFlag": "N"
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg"
+                    "-ExtnMrp": "7878.00"
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg"
+                    "-ExtnSAPColor": "Gold"
+                    "-ExtnSegmentType": "Men"
+                    "-ExtnSize": "30"
+                    "-ExtnSizeDisplayType": "BRAND"
+                    "-ExtnSizeFormat": "IN"
+                    "-ExtnUnitVolumetricWeight": "12167.00"
+                    "-self-closing": "true"
+                  ClassificationCodes:
+                    "-ECCNNo": "9165113000543"
+                    "-TaxProductCode": "6206"
+                    "-self-closing": "true"
+                LineCharges:
+                  LineCharge:
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Promotion"
+                      "-ChargeName": "VoucherDiscount"
+                      "-ChargeNameKey": "2015073115322332613"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "866.62"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Shipping"
+                      "-ChargeName": "Shipping"
+                      "-ChargeNameKey": "2015073115325832625"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "34.00"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "AjioPromotion"
+                      "-ChargeNameKey": "20191226144643402085"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "787.75"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "SellerPromotion"
+                      "-ChargeNameKey": "20191226144628402084"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "2363.25"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                LineTaxes:
+                  "-self-closing": "true"
+              - "-CarrierAccountNo": "SURFACE"
+                "-CarrierServiceCode": "SURFACE"
+                "-DeliveryMethod": "SHP"
+                "-FulfillmentType": "JIT"
+                "-GiftWrap": "N"
+                "-ItemGroupCode": "PROD"
+                "-OrderedQty": "1"
+                "-PrimeLineNo": "2"
+                "-ReservationID": ""
+                "-SCAC": "ECOM"
+                "-ShipNode": "A02C"
+                Item:
+                  "-ItemID": "460407277002"
+                  "-ProductClass": "GOOD"
+                  "-UnitOfMeasure": "EACH"
+                  "-self-closing": "true"
+                LinePriceInfo:
+                  "-IsLinePriceForInformationOnly": "N"
+                  "-IsPriceLocked": "Y"
+                  "-ListPrice": "4727.00"
+                  "-RetailPrice": "7878.00"
+                  "-UnitPrice": "4727.00"
+                  "-self-closing": "true"
+                Extn:
+                  "-ExtnEAN": "9165113000543"
+                  "-ExtnGSTValue": "0.00"
+                  "-ExtnIsPrebooked": "N"
+                  "-ExtnIsRestrictedFlag": "N"
+                  "-ExtnPromotionID": "886306"
+                  "-ExtnReportingHSNCode": "6206"
+                  "-self-closing": "true"
+                PersonInfoShipTo:
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww"
+                  "-AddressLine2": "kasavanhalli"
+                  "-City": "BANGALORE"
+                  "-Company": ""
+                  "-Country": "IN"
+                  "-DayPhone": "9902456215"
+                  "-EMailID": "rashmi.anand@ril.com"
+                  "-FirstName": "Rashmi"
+                  "-IsCommercialAddress": "N"
+                  "-LastName": "anand"
+                  "-MobilePhone": "9902456215"
+                  "-OtherPhone": ""
+                  "-State": "KAR"
+                  "-ZipCode": "560066"
+                  "-self-closing": "true"
+                ShipNode:
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9"
+                  "-NodeType": "Store"
+                  "-ShipnodeKey": "A02C"
+                  ShipNodePersonInfo:
+                    "-AddressLine1": "Trends - Ascendas"
+                    "-AddressLine2": "Square Mall"
+                    "-AddressLine3": "Whitefield Main Road. itpl"
+                    "-AddressLine4": ""
+                    "-AddressLine5": ""
+                    "-AddressLine6": ""
+                    "-AlternateEmailID": ""
+                    "-Beeper": ""
+                    "-City": "Bangalore"
+                    "-Company": ""
+                    "-Country": "IN"
+                    "-DayFaxNo": ""
+                    "-DayPhone": "9035777119"
+                    "-Department": ""
+                    "-EMailID": "harikrishnarecharla@gmail.com"
+                    "-EveningFaxNo": ""
+                    "-EveningPhone": ""
+                    "-FirstName": "Trends"
+                    "-HttpUrl": ""
+                    "-JobTitle": ""
+                    "-LastName": "2022"
+                    "-MiddleName": "June"
+                    "-MobilePhone": "9909090915"
+                    "-OtherPhone": ""
+                    "-PersonID": ""
+                    "-State": "KAR"
+                    "-Suffix": ""
+                    "-Title": ""
+                    "-ZipCode": "560066"
+                    "-self-closing": "true"
+                OrderLineReservations:
+                  "-self-closing": "true"
+                References:
+                  Reference:
+                    - "-Name": "ColourVariant"
+                      "-Value": "460403894_cream"
+                      "-self-closing": "true"
+                    - "-Name": "GenericId"
+                      "-Value": "460403894"
+                      "-self-closing": "true"
+                    - "-Name": "StyleType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "SeasonCode"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "BrickFit"
+                      "-Value": "Slim Fit"
+                      "-self-closing": "true"
+                    - "-Name": "FitType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "Brand"
+                      "-Value": "raymond"
+                      "-self-closing": "true"
+                    - "-Name": "Brick"
+                      "-Value": "830216013"
+                      "-self-closing": "true"
+                    - "-Name": "Vendor"
+                      "-Value": ""
+                      "-self-closing": "true"
+                OrderDates:
+                  OrderDate:
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "EDD"
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30"
+                      "-self-closing": "true"
+                    - "-DateTypeId": "EHD"
+                      "-self-closing": "true"
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "PSD"
+                      "-self-closing": "true"
+                ItemDetails:
+                  "-CanUseAsServiceTool": "N"
+                  "-GlobalItemID": ""
+                  "-IsItemSuperseded": "N"
+                  "-ItemGroupCode": "PROD"
+                  "-ItemID": "460407277002"
+                  "-ItemKey": "20200514114542514408923"
+                  "-OrganizationCode": "RIL"
+                  "-UnitOfMeasure": "EACH"
+                  PrimaryInformation:
+                    "-AllowGiftWrap": "1"
+                    "-ColorCode": "Gold"
+                    "-CostCurrency": "INR"
+                    "-CountryOfOrigin": "IN"
+                    "-Description": ""
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts"
+                    "-ExtendedDescription": ""
+                    "-ItemType": "NonHeavy"
+                    "-ManufacturerName": "rilfnlProductCatalog"
+                    "-PrimarySupplier": ""
+                    "-ProductLine": "830216013"
+                    "-ShortDescription": "Checks Slim Fit Shirts"
+                    "-SizeCode": "30"
+                    "-Status": "3000"
+                    "-TaxableFlag": "N"
+                    "-UnitCost": "7878.00"
+                    "-UnitHeight": "0.00"
+                    "-UnitHeightUOM": "CM"
+                    "-UnitLength": "0.00"
+                    "-UnitLengthUOM": "CM"
+                    "-UnitVolume": "0.00"
+                    "-UnitVolumeUOM": "CUCENTIMETER"
+                    "-UnitWeight": "30.00"
+                    "-UnitWeightUOM": "GRAM"
+                    "-UnitWidth": "0.00"
+                    "-UnitWidthUOM": "CM"
+                    "-self-closing": "true"
+                  Extn:
+                    "-ExtnBrandName": "RAYMOND"
+                    "-ExtnComponentCount": "34.00"
+                    "-ExtnDelistedFlag": "N"
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg"
+                    "-ExtnMrp": "7878.00"
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg"
+                    "-ExtnSAPColor": "Gold"
+                    "-ExtnSegmentType": "Men"
+                    "-ExtnSize": "30"
+                    "-ExtnSizeDisplayType": "BRAND"
+                    "-ExtnSizeFormat": "IN"
+                    "-ExtnUnitVolumetricWeight": "12167.00"
+                    "-self-closing": "true"
+                  ClassificationCodes:
+                    "-ECCNNo": "9165113000543"
+                    "-TaxProductCode": "6206"
+                    "-self-closing": "true"
+                LineCharges:
+                  LineCharge:
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Promotion"
+                      "-ChargeName": "VoucherDiscount"
+                      "-ChargeNameKey": "2015073115322332613"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "66.62"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Shipping"
+                      "-ChargeName": "Shipping"
+                      "-ChargeNameKey": "2015073115325832625"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "34.00"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "AjioPromotion"
+                      "-ChargeNameKey": "20191226144643402085"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "787.75"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "SellerPromotion"
+                      "-ChargeNameKey": "20191226144628402084"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "2363.25"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                LineTaxes:
+                  "-self-closing": "true"
+              - "-CarrierAccountNo": "SURFACE"
+                "-CarrierServiceCode": "SURFACE"
+                "-DeliveryMethod": "SHP"
+                "-FulfillmentType": "JIT"
+                "-GiftWrap": "N"
+                "-ItemGroupCode": "PROD"
+                "-OrderedQty": "1"
+                "-PrimeLineNo": "3"
+                "-ReservationID": ""
+                "-SCAC": "ECOM"
+                "-ShipNode": "A02C"
+                Item:
+                  "-ItemID": "460407276004"
+                  "-ProductClass": "GOOD"
+                  "-UnitOfMeasure": "EACH"
+                  "-self-closing": "true"
+                LinePriceInfo:
+                  "-IsLinePriceForInformationOnly": "N"
+                  "-IsPriceLocked": "Y"
+                  "-ListPrice": "4727.00"
+                  "-RetailPrice": "7878.00"
+                  "-UnitPrice": "4727.00"
+                  "-self-closing": "true"
+                Extn:
+                  "-ExtnEAN": "9165113000543"
+                  "-ExtnGSTValue": "0.00"
+                  "-ExtnIsPrebooked": "N"
+                  "-ExtnIsRestrictedFlag": "N"
+                  "-ExtnPromotionID": "886306"
+                  "-ExtnReportingHSNCode": "6206"
+                  "-self-closing": "true"
+                PersonInfoShipTo:
+                  "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww"
+                  "-AddressLine2": "kasavanhalli"
+                  "-City": "BANGALORE"
+                  "-Company": ""
+                  "-Country": "IN"
+                  "-DayPhone": "9902456215"
+                  "-EMailID": "rashmi.anand@ril.com"
+                  "-FirstName": "Rashmi"
+                  "-IsCommercialAddress": "N"
+                  "-LastName": "anand"
+                  "-MobilePhone": "9902456215"
+                  "-OtherPhone": ""
+                  "-State": "KAR"
+                  "-ZipCode": "560066"
+                  "-self-closing": "true"
+                ShipNode:
+                  "-ExportTaxpayerId": "05AAACA6460B2Z9"
+                  "-NodeType": "Store"
+                  "-ShipnodeKey": "A02C"
+                  ShipNodePersonInfo:
+                    "-AddressLine1": "Trends - Ascendas"
+                    "-AddressLine2": "Square Mall"
+                    "-AddressLine3": "Whitefield Main Road. itpl"
+                    "-AddressLine4": ""
+                    "-AddressLine5": ""
+                    "-AddressLine6": ""
+                    "-AlternateEmailID": ""
+                    "-Beeper": ""
+                    "-City": "Bangalore"
+                    "-Company": ""
+                    "-Country": "IN"
+                    "-DayFaxNo": ""
+                    "-DayPhone": "9035777119"
+                    "-Department": ""
+                    "-EMailID": "harikrishnarecharla@gmail.com"
+                    "-EveningFaxNo": ""
+                    "-EveningPhone": ""
+                    "-FirstName": "Trends"
+                    "-HttpUrl": ""
+                    "-JobTitle": ""
+                    "-LastName": "2022"
+                    "-MiddleName": "June"
+                    "-MobilePhone": "9909090915"
+                    "-OtherPhone": ""
+                    "-PersonID": ""
+                    "-State": "KAR"
+                    "-Suffix": ""
+                    "-Title": ""
+                    "-ZipCode": "560066"
+                    "-self-closing": "true"
+                OrderLineReservations:
+                  "-self-closing": "true"
+                References:
+                  Reference:
+                    - "-Name": "ColourVariant"
+                      "-Value": "460403894_cream"
+                      "-self-closing": "true"
+                    - "-Name": "GenericId"
+                      "-Value": "460403894"
+                      "-self-closing": "true"
+                    - "-Name": "StyleType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "SeasonCode"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "BrickFit"
+                      "-Value": "Slim Fit"
+                      "-self-closing": "true"
+                    - "-Name": "FitType"
+                      "-Value": ""
+                      "-self-closing": "true"
+                    - "-Name": "Brand"
+                      "-Value": "raymond"
+                      "-self-closing": "true"
+                    - "-Name": "Brick"
+                      "-Value": "830216013"
+                      "-self-closing": "true"
+                    - "-Name": "Vendor"
+                      "-Value": ""
+                      "-self-closing": "true"
+                OrderDates:
+                  OrderDate:
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "EDD"
+                      "-RequestedDate": "2023-02-23T00:00:00+05:30"
+                      "-self-closing": "true"
+                    - "-DateTypeId": "EHD"
+                      "-self-closing": "true"
+                    - "-ActualDate": "2023-02-23T00:00:00+05:30"
+                      "-DateTypeId": "PSD"
+                      "-self-closing": "true"
+                ItemDetails:
+                  "-CanUseAsServiceTool": "N"
+                  "-GlobalItemID": ""
+                  "-IsItemSuperseded": "N"
+                  "-ItemGroupCode": "PROD"
+                  "-ItemID": "460407276004"
+                  "-ItemKey": "20200514114542514408923"
+                  "-OrganizationCode": "RIL"
+                  "-UnitOfMeasure": "EACH"
+                  PrimaryInformation:
+                    "-AllowGiftWrap": "1"
+                    "-ColorCode": "Gold"
+                    "-CostCurrency": "INR"
+                    "-CountryOfOrigin": "IN"
+                    "-Description": ""
+                    "-DisplayItemDescription": "Checks Slim Fit Shirts"
+                    "-ExtendedDescription": ""
+                    "-ItemType": "NonHeavy"
+                    "-ManufacturerName": "rilfnlProductCatalog"
+                    "-PrimarySupplier": ""
+                    "-ProductLine": "830216013"
+                    "-ShortDescription": "Checks Slim Fit Shirts"
+                    "-SizeCode": "30"
+                    "-Status": "3000"
+                    "-TaxableFlag": "N"
+                    "-UnitCost": "7878.00"
+                    "-UnitHeight": "0.00"
+                    "-UnitHeightUOM": "CM"
+                    "-UnitLength": "0.00"
+                    "-UnitLengthUOM": "CM"
+                    "-UnitVolume": "0.00"
+                    "-UnitVolumeUOM": "CUCENTIMETER"
+                    "-UnitWeight": "30.00"
+                    "-UnitWeightUOM": "GRAM"
+                    "-UnitWidth": "0.00"
+                    "-UnitWidthUOM": "CM"
+                    "-self-closing": "true"
+                  Extn:
+                    "-ExtnBrandName": "RAYMOND"
+                    "-ExtnComponentCount": "34.00"
+                    "-ExtnDelistedFlag": "N"
+                    "-ExtnImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h09/h08/9152250150942/-60Wx75H-460403894-cream-MODEL.jpg"
+                    "-ExtnMrp": "7878.00"
+                    "-ExtnPDPImageURL": "https://assets-uat.ajio.ril.com/medias/sys_master/root/h33/h50/9152246415390/-473Wx593H-460403894-cream-MODEL.jpg"
+                    "-ExtnSAPColor": "Gold"
+                    "-ExtnSegmentType": "Men"
+                    "-ExtnSize": "30"
+                    "-ExtnSizeDisplayType": "BRAND"
+                    "-ExtnSizeFormat": "IN"
+                    "-ExtnUnitVolumetricWeight": "12167.00"
+                    "-self-closing": "true"
+                  ClassificationCodes:
+                    "-ECCNNo": "9165113000543"
+                    "-TaxProductCode": "6206"
+                    "-self-closing": "true"
+                LineCharges:
+                  LineCharge:
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Promotion"
+                      "-ChargeName": "VoucherDiscount"
+                      "-ChargeNameKey": "2015073115322332613"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "66.62"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "Shipping"
+                      "-ChargeName": "Shipping"
+                      "-ChargeNameKey": "2015073115325832625"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "34.00"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "AjioPromotion"
+                      "-ChargeNameKey": "20191226144643402085"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "787.75"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                    - "-ChargeAmount": "866.62"
+                      "-ChargeCategory": "SELLER_PROMO"
+                      "-ChargeName": "SellerPromotion"
+                      "-ChargeNameKey": "20191226144628402084"
+                      "-ChargePerLine": "0.00"
+                      "-ChargePerUnit": "2363.25"
+                      "-InvoicedChargeAmount": "0.00"
+                      "-InvoicedChargePerLine": "0.00"
+                      "-InvoicedChargePerUnit": "0.00"
+                      "-IsBillable": "Y"
+                      "-IsDiscount": "N"
+                      "-IsManual": "Y"
+                      "-IsShippingCharge": "N"
+                      "-Reference": "34.0"
+                      "-RemainingChargeAmount": "34.00"
+                      "-RemainingChargePerLine": "0.00"
+                      "-RemainingChargePerUnit": "34.00"
+                      "-self-closing": "true"
+                LineTaxes:
+                  "-self-closing": "true"
+          PersonInfoBillTo:
+            "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww"
+            "-AddressLine2": "kasavanhalli"
+            "-City": "BANGALORE"
+            "-Company": ""
+            "-Country": "IN"
+            "-DayPhone": "9902456215"
+            "-EMailID": "rashmi.anand@ril.com"
+            "-FirstName": "Rashmi"
+            "-IsCommercialAddress": "N"
+            "-LastName": "anand"
+            "-MobilePhone": "9686564181"
+            "-OtherPhone": ""
+            "-State": "KAR"
+            "-ZipCode": "560066"
+            "-self-closing": "true"
+          References:
+            "-self-closing": "true"
+          PaymentMethods:
+            PaymentMethod:
+              "-CreditCardName": "NETS"
+              "-CreditCardNo": "PSXK9WsXdEe2wIcnkUlDlVA"
+              "-CreditCardType": "TEST_UAT"
+              "-CustomerPONo": "pay_5caf2fa0-777f-11ed-b021-c3b58912441b"
+              "-MaxChargeLimit": "257.0"
+              "-PaymentReference1": "FNA6300898923"
+              "-PaymentReference2": "932"
+              "-PaymentReference3": "2022-12-09T10:37:29.937+05:30"
+              "-PaymentType": "COD"
+              "-UnlimitedCharges": "N"
+              PaymentDetailsList:
+                PaymentDetails:
+                  "-AuthorizationID": "FNA6300898923"
+                  "-ChargeType": "CHARGE"
+                  "-CollectionDate": "2022-12-09T10:37:29.937+05:30"
+                  "-ProcessedAmount": "932"
+                  "-RequestAmount": "932"
+                  "-RequestId": "FNA6300898923"
+                  "-TranReturnCode": "success"
+                  Extn:
+                    "-self-closing": "true"
+          PersonInfoShipTo:
+            "-AddressLine1": "7889dqwwwwwwwwwwwwwwwwwwwwwwww"
+            "-AddressLine2": "kasavanhalli"
+            "-City": "BANGALORE"
+            "-Country": "IN"
+            "-DayPhone": "9902456215"
+            "-EMailID": "rashmi.anand@ril.com"
+            "-FirstName": "Rashmi"
+            "-LastName": "anand"
+            "-MobilePhone": "9902456215"
+            "-State": "KAR"
+            "-ZipCode": "560066"
+            "-self-closing": "true"
+          OrderDates:
+            "-self-closing": "true"
+        '#standalone': "yes"

@@ -1,0 +1,15 @@
+# com.scm.automation.test.login.CommonLoginServiceFunctionalTest
+
+testLogin:
+  - testcaseId: LOGIN-POSITIVE-0001
+    testcaseName: "Test login positive scenario-1"
+    request:
+      login:
+        username: test
+        password: test
+      resetPassword:
+        username: test
+    response:
+      login:
+        errorMessage: "Invalid credentials"
+

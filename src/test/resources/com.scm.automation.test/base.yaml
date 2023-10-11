@@ -1,0 +1,7 @@
+name: base yaml
+data:
+  type: string
+  value: hello world from base
+
+baseData:
+  message: This data will be copied to all the derived yamls

@@ -1,0 +1,70 @@
+ui:
+  selenoid:
+    hub: http://10.167.190.80:30444/wd/hub
+    ui: http://10.167.190.80:31444
+  mobilab:
+    hub: https://mobilab2.ril.com/appiumcloud/wd/hub
+  jioConnect:
+    url: https://idm.jioconnect.com
+service:
+  qaService:
+    url: http://10.167.190.78:31000/qaservice/api/v1
+    id: 1
+  loginService:
+    url: http://10.166.181.84:31807
+    loginApi: /common-login-service/login
+  xmlRestService:
+    url: http://restapi.adequateshop.com
+    travelerApi: /api/Traveler
+  getOrderDetails:
+    url: http://10.21.63.105:9080
+    endpoint: /smcfs/restapi/invoke/getOrderList?_templateId=B2B,getOrderLines&
+  multiPartService:
+    url: https://petstore.swagger.io
+    uploadImageApi: /v2/pet/123434/uploadImage
+  tibcoHybrisToOms:
+    url: tcp://10.21.87.64:7120
+    password: str_qa
+    username: str_qa
+    createOrderQueueName: RIL.IND.FNL.CREATEORDER.OMS.FS.QUEUE
+  fsDatabaseService:
+    port: 5432
+    host: 10.166.181.87
+    username: fsuser
+    password: fsadmin
+    dbName: fsdb
+    getFulfillmentLineStatusAudit: select * from fulfillment_line_status_audit where order_num ='${orderNumber}'
+  omsDatabaseService:
+    port: 1521
+    host: 10.21.79.20
+    username: FLSTUATOMS
+    password: flstuatoms
+    dbName: FLOMSUAT
+    getYFSShipment: select * from YFS_SHIPMENT where shipment_key='${shipmentKey}'
+  tmsDatabaseService:
+    port: 9042
+    host: 10.21.87.42
+    username: ewaybillgrocerysit
+    password: GfFjcildo4V2T#cxa
+    keyspace: ewaybill_dp
+    getInvoiceDetails: select * from invoice_details_master limit 3
+    datacenter: datacenter1
+  fsMongoDatabaseService:
+    host: 10.177.51.213
+    port: 31017
+    username: mongouser
+    password: mongopass
+    dbName: groceryDB
+    collection: audit
+  tibcoPaymentDetails:
+    url: tcp://10.21.6.200:7222
+    username: tibcouser
+    password: tibcouser
+  soapService:
+    url: https://netconnect.bluedart.com/API-QA/Ver1.9
+    travelerApi: /Demo/ShippingAPI/WayBill/WayBillGeneration.svc
+  cacheService:
+    port: 6381
+    host: 10.166.181.243
+    username: ""
+    password: BNv4fT32sp1B14nFa4lZ6tKpvwCdaGCwN02sIZHiU18743ac9866RZ2a2WY42OQW

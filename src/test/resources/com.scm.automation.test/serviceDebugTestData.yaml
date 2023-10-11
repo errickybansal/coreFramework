@@ -1,0 +1,368 @@
+testPdfFromByteArray:
+- testcaseId: ID-0001
+  testcaseName: Test
+  request:
+    baseUri: "http://10.21.87.30:8071"
+    basePath: "/pick-execution-service-ajiosom/v1/batches/pickwithpdf"
+    method: "PUT"
+    responseType: BYTE_ARRAY
+    headers:
+      Content-Type: "application/json"
+      realm: "ajiosom"
+      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1U3ljS3BKeUoybkJuci01eFMzWU9walloVkNNNlZCTlc4Z0s2WVZzenhNIn0.eyJqdGkiOiI3YjZlNzY2ZS0zYjJiLTQ2YWUtOGM5OC00MGQ0MGM5ZTFhZGIiLCJleHAiOjE2ODc5NjI0MTEsIm5iZiI6MCwiaWF0IjoxNjg3OTYwNjExLCJpc3MiOiJodHRwOi8vMTAuMjEuNzcuMjAwOjgwOTEvYXV0aC9yZWFsbXMvYWppb3NvbSIsImF1ZCI6WyJzd2FkZGxlLWFwaSIsIm1hbmlmZXN0LWFwaSIsImFjY291bnQiLCJwaWNrLWFwcCIsImFqaW9zb20tYXBpIl0sInN1YiI6IjcyMWVkZjRhLWM5N2MtNGYzNi1hNzE3LThlMmRlNmUyOGMzNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFqaW9zb20tdWkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI0ODMzMzZjZC1hYjkxLTQ5ODUtOWI0Yi1hYmExYWUxODI5YmUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJzd2FkZGxlLWFwaSI6eyJyb2xlcyI6WyJhcHAiLCJwYWNrZXIiLCJzdXBlcnZpc29yIl19LCJtYW5pZmVzdC1hcGkiOnsicm9sZXMiOlsibWFuaWZlc3QiLCJzdXBlcnZpc29yIl19LCJhamlvc29tLXVpIjp7InJvbGVzIjpbInBhY2tlciIsInN1cGVydmlzb3JfaHEiLCJtYW5pZmVzdCIsInBpY2tlcl91aSIsInJldHVybnMiLCJzdXBlcnZpc29yIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX0sInBpY2stYXBwIjp7InJvbGVzIjpbImFwcCIsInBpY2tlciIsInN1cGVydmlzb3IiXX0sImFqaW9zb20tYXBpIjp7InJvbGVzIjpbInBpY2tlciIsInN1cGVydmlzb3IiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzdG9yZXR5cGUiOiJUUkVORFMiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInNoaXBub2RlIjoiODA0NCIsImdyb3VwbmFtZXMiOlsic2ZzX2hxIiwic2ZzX25vcm1hbCIsInNmc19zdXBlcnZpc29yIl0sIm5hbWUiOiI4MDQ0X2hxMSA4MDQ0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiODA0NF9ocTEiLCJnaXZlbl9uYW1lIjoiODA0NF9ocTEiLCJmYW1pbHlfbmFtZSI6IjgwNDQiLCJ0ZW5hbnQiOiJBSklPU09NIn0.a20kQKjOCAcHT31pVnfHgMiDaWlEFoPOUlOngqWOSNPKkWwXiiKy1fXeD18kk5pID7UTGf3XlhMHIFIozSt__aLUjcSW0TvliTb813JKB2BUAXXZNu0VCYf4pUbV_29_MgMcJnCiS9YyW8_ylyWasMvzCRBIDYPjC5Yn-Rc5N6PnFxsNCS_2csRSvoY6iPddDBnEKZP8BS5DMvGmR-SkoSBKl9DleB9jmG8rvynOGgPkrQeNIYQJQjyOrQL1TtlIa498goHos9LVVqGpWwW81SIyAGQmBz8_58eygqtIeXFPqojM5Eqe5WmKSik_HX9DXcmS-f2unzC-u3HRw2QMww"
+    ignoreBaseHeaders: false
+    body: |-
+      {
+        "payload": {
+          "tenantId": "AJIOSOM",
+          "shipNode": "8044",
+          "waveNo": "1020708"
+        }
+      }
+    verifySsl: false
+
+testGetCall:
+  - testcaseId: ID-0002
+    testcaseName: Test
+    request:
+      baseUri: "http://10.21.87.30:8071"
+      basePath: "/wave-service-ajiosom/v1/shipments?tenantId=AJIOSOM&shipNode=8044&openShipments=true&orderIds=FNA3300000901"
+      method: "GET"
+      headers:
+        Content-Type: "application/json"
+        Accept: "application/json"
+        realm: "ajiosom"
+        Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1U3ljS3BKeUoybkJuci01eFMzWU9walloVkNNNlZCTlc4Z0s2WVZzenhNIn0.eyJqdGkiOiI0Yjg3YTBlOC05YjZhLTQ3ZmUtYjA5ZC02YTEyMzgxZDQ2M2EiLCJleHAiOjE2ODc5NjAxMTEsIm5iZiI6MCwiaWF0IjoxNjg3OTU4MzExLCJpc3MiOiJodHRwOi8vMTAuMjEuNzcuMjAwOjgwOTEvYXV0aC9yZWFsbXMvYWppb3NvbSIsImF1ZCI6WyJzd2FkZGxlLWFwaSIsIm1hbmlmZXN0LWFwaSIsImFjY291bnQiLCJwaWNrLWFwcCIsImFqaW9zb20tYXBpIl0sInN1YiI6IjcyMWVkZjRhLWM5N2MtNGYzNi1hNzE3LThlMmRlNmUyOGMzNyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFqaW9zb20tdWkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI1YWJlOGRhZi00YTFmLTRmYTUtYmRjMi02MzgzZWVjY2EwODMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJzd2FkZGxlLWFwaSI6eyJyb2xlcyI6WyJhcHAiLCJwYWNrZXIiLCJzdXBlcnZpc29yIl19LCJtYW5pZmVzdC1hcGkiOnsicm9sZXMiOlsibWFuaWZlc3QiLCJzdXBlcnZpc29yIl19LCJhamlvc29tLXVpIjp7InJvbGVzIjpbInBhY2tlciIsInN1cGVydmlzb3JfaHEiLCJtYW5pZmVzdCIsInBpY2tlcl91aSIsInJldHVybnMiLCJzdXBlcnZpc29yIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX0sInBpY2stYXBwIjp7InJvbGVzIjpbImFwcCIsInBpY2tlciIsInN1cGVydmlzb3IiXX0sImFqaW9zb20tYXBpIjp7InJvbGVzIjpbInBpY2tlciIsInN1cGVydmlzb3IiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzdG9yZXR5cGUiOiJUUkVORFMiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInNoaXBub2RlIjoiODA0NCIsImdyb3VwbmFtZXMiOlsic2ZzX2hxIiwic2ZzX25vcm1hbCIsInNmc19zdXBlcnZpc29yIl0sIm5hbWUiOiI4MDQ0X2hxMSA4MDQ0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiODA0NF9ocTEiLCJnaXZlbl9uYW1lIjoiODA0NF9ocTEiLCJmYW1pbHlfbmFtZSI6IjgwNDQiLCJ0ZW5hbnQiOiJBSklPU09NIn0.J4ckKeKq7Yny1XMkLPhN2AYOhxJhUCzesBGPvnMC5fIskSnV4X4wBSTij62FI7C5P0RzJsyzTjuq3jTAPxdz_0T-bfPNwQdtdpA8I9KrAg7tgqynaAcyytHAv5WT-6_wvEM--SE04ag7bamOrhFHFEomDjKavvrYm9X4EFPhlZ8sZt6Nl1y2tFacO9WuISs4eMlOryT6Rt7z3YxNWRaC0Ew7EaIWp6Pn5KgQMvmdtekTnZlibhAwbqAA94uqJjXVt56b9K3r_pDbJwopNiSAMi43CaVUWHN1SmxjNavfboF2GJf7bZMOVLedo03WATwCOneC1R0v-jD6Msx1CaBv8g"
+      ignoreBaseHeaders: false
+      params:
+        orderNo: "FNA3300000901"
+        shipNode: "8044"
+        tenantId: "AJIOSOM"
+      verifySsl: false
+
+testMongoQueryParams:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      host: 10.177.51.207
+      port: 31017
+      username: applicationUser
+      password: 05dSQuSMReLDbf363tQX6VFL
+      dbName: audit
+      collection: audit
+      params:
+        queryParams:
+          tls: false
+          authSource: audit
+testKafkaReceiveMessage:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      headers: { }
+      connAttemptCount: 10
+      connAttemptDelay: 2000
+      connAttemptTimeout: 10000
+      topic: "ajob2b.herald.b2b.fs.fulfillmentOrderPaymentUpdate.sit"
+      value: "FO202308082339"
+      recordCounts: 15
+      partitionIdList:
+        - 1
+      pollTime: 10000
+      consumerProperties:
+        key.deserializer: "org.apache.kafka.common.serialization.StringDeserializer"
+        value.deserializer: "org.apache.kafka.common.serialization.StringDeserializer"
+        max.poll.records: "100"
+        group.id: "GROUP-ID-1"
+        ssl.keystore.location: "/Users/salil.devanshi/Documents/AJIORepo/scm-automation-fs/target/classes/com.scm.automation.ajio.b2b.fs/kafka.keystore.jks"
+        bootstrap.servers: "gcsitgpeapp07.jio.com:9091"
+        auto.commit.interval.ms: "1000"
+        security.protocol: "SSL"
+        pollTime: "20000"
+        ssl.truststore.location: "/Users/salil.devanshi/Documents/AJIORepo/scm-automation-fs/target/classes/com.scm.automation.ajio.b2b.fs/kafka.truststore.jks"
+        enable.auto.commit: "false"
+        ssl.keystore.password: "changeit"
+        ssl.truststore.password: "changeit"
+        auto.offset.reset: "latest"
+testKafkaSendMessage:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      headers: { }
+      connAttemptCount: 10
+      connAttemptDelay: 2000
+      connAttemptTimeout: 10000
+      topic: "jio.scm.ajiob2c.fg.reschedule.response.uat"
+      key: "FO1000024841"
+      value: |-
+        {
+          "id": "f5f53cd5-bef9-49df-bcf0-c260f7c02b78",
+          "orderNum": "EX_1482705308",
+          "tenantId": "AJIOB2C",
+          "client": "FS",
+          "versionId": "1.0",
+          "codEligible": true,
+          "zipCode": 560066,
+          "deliveryType": "FORWARD",
+          "orderType": "EXCHANGE",
+          "paymentType": "PREPAID",
+          "fulfillmentOrderLines": [
+            {
+              "id": "2292a71d-341c-43c7-a5f0-6384cfa87b1a",
+              "deliveryMethod": "STANDARD",
+              "nodeDetermination": true,
+              "quantity": 2,
+              "nodeId": "A02B",
+              "fulfillmentType": "FnL_SHIP",
+              "reservationId": "3637796e-0384-4a5d-af8c-d3c9fd4fb6a0",
+              "restrictedService": false,
+              "skuId": "460407276001",
+              "tenantId": "AJIO",
+              "weightUnit": "KG",
+              "itemWeight": 4,
+              "itemValue": 999,
+              "organizationCode": "RIL",
+              "productClass": "GOOD",
+              "unitOfMeasure": "EACH",
+              "promiseShippingDate": "2023-06-26T00:00:00+05:30",
+              "promiseDeliveryDate": "2023-06-30T00:00:00+05:30",
+              "shipmentMethod": "SURFACE",
+              "address": {
+                "addressId": "shipNodeAddress",
+                "nodeType": "DC",
+                "addressType": "ShipNode",
+                "firstName": "Reliance",
+                "middleName": "Retail",
+                "lastName": "Ltd.",
+                "address1": "Survey No. 54/1",
+                "address2": "Nandihalli village 55th Km stone NH-4 Tumkur road",
+                "address3": "Oordigree Hobli Taluka",
+                "city": "Tumkur",
+                "company": "RIL",
+                "state": "KAR",
+                "country": "IN",
+                "zipCode": "562123",
+                "phoneNum": "8892959048",
+                "emailId": "shipper@reliance.com"
+              }
+            }
+          ]
+        }
+      pollTime: 10000
+      partitionIdList:
+        - 2
+      producerProperties:
+        security.protocol: "SSL"
+        ssl.truststore.location: "/Users/salil.devanshi/Documents/AJIORepo/scm-automation-fs/target/classes/com.scm.automation.certs/kafka.truststore.jks"
+        value.serializer: "org.apache.kafka.common.serialization.StringSerializer"
+        ssl.keystore.password: "changeit"
+        ssl.keystore.location: "/Users/salil.devanshi/Documents/AJIORepo/scm-automation-fs/target/classes/com.scm.automation.certs/gcsitgpeapp05.jio.com.jks"
+        bootstrap.servers: "gcsitgpeapp05.jio.com:9091"
+        ssl.truststore.password: "changeit"
+        key.serializer: "org.apache.kafka.common.serialization.StringSerializer"
+
+testKafkaSendMessageWithHeaders:
+  - testcaseId: ID-0004
+    testcaseName: Test kafka with headers
+    request:
+      headers:
+        spring_json_header_types: '{ "FlowName": "java.lang.String", "source": "java.lang.String" }'
+        FlowName: CREATE_SHIPMENT
+        source: createShipment
+      connAttemptCount: 10
+      connAttemptDelay: 2000
+      connAttemptTimeout: 10000
+      topic: "ajob2c.herald.shipmentService.inputRequest.uat"
+      value: |-
+        {
+        		    "orderNo": "FLA00047891237",
+        		    "orderDate": "2023-07-28",
+        		    "fulfilmentId": "FO10546771237",
+        		    "shipmentType": "FORWARD",
+        		    "shipmentSubType": "FORWARD",
+        		    "tenantId": "AJIOB2C",
+        		    "source": "FS",
+        		    "paymentType": "COD",
+        		    "totalAmount": 500,
+        		    "amountToBeCollected": 500,
+        		    "nodeId": "8044",
+        		    "nodeType": "STORE",
+        		    "receivingNodeId": "",
+        		    "trackingId": "9459209307",
+        		    "enterpriseCode": "",
+        		    "requestId": "",
+        		    "carrierServiceCode": "ECOM",
+        		    "carrierServiceName": "ECOM",
+        		    "vendorCode": "",
+        		    "parentShipmentNo": "",
+        		    "parentTrackingId": "",
+        		    "status": "SHIPMENT_DRAFT_CREATED",
+        		    "pregenAWBRequired": true,
+        		    "logisticDetail": {
+        		        "shipmentMethod": "SURFACE",
+        		        "deliveryMethod": "SHIP",
+        		        "priorityCode": 0,
+        		        "nodeTaxPayerId": "TY696969",
+        		        "qrCode": "dXBpOi8vcGF5P3Zlcj0wMSIyMTEwMDAwNzQ1MjUmcXJNZWRpdW09MDI=",
+        		        "shipmentWeight": 28.99,
+        		        "weightUom": "KILOGRAM, GRAM",
+        		        "destinationCityCode": "HLG",
+        		        "sourceCityCode": "HLG",
+        		        "tat": 9,
+        		        "routingCode": "HLG/HLG-1",
+        		        "movementType": "Last Mile",
+        		        "shipMode": "PARCEL"
+        		    },
+        		    "shipmentLines": [
+        		        {
+        		            "shipmentLineNo": "",
+        		            "itemId": "460407276002",
+        		            "itemDescription": "PUMA Shoes",
+        		            "orderLineNo": "1",
+        		            "originalQty": 3,
+        		            "status": "SHIPMENT_DRAFT_CREATED"
+        		        },
+        		        {
+        		            "shipmentLineNo": "",
+        		            "itemId": "460407276004",
+        		            "itemDescription": "PUMA Shoes",
+        		            "orderLineNo": "2",
+        		            "originalQty": 1,
+        		            "status": "SHIPMENT_DRAFT_CREATED"
+        		        }
+        		    ],
+        		    "shipmentDates": [
+        		        {
+        		            "dateType": "PROMISED_SHIPMENT_DATE",
+        		            "dateTimestamp": "2022-07-28",
+        		            "reason": "Capacity breach, Non sellable item, etc"
+        		        }
+        		    ],
+        		    "address": [
+        		        {
+        		            "addressType": "SHIP_TO",
+        		            "firstName": "Renuka",
+        		            "middleName": "",
+        		            "lastName": "Yannam",
+        		            "line1": "TestFlat Test Building",
+        		            "line2": "Test Area",
+        		            "line3": "",
+        		            "line4": "",
+        		            "landmark": "",
+        		            "city": "BANGALORE",
+        		            "district": "Tumkur",
+        		            "state": "KAR",
+        		            "postalCode": "560099",
+        		            "country": "IN",
+        		            "phoneNo": "9886975886",
+        		            "otherPhoneNo": "",
+        		            "company": "",
+        		            "emailId": "renuka1.yannam@ril.com",
+        		            "gstin": "",
+        		            "vendor": ""
+        		        },
+        		        {
+        		            "addressType": "BILL_TO",
+        		            "firstName": "Renuka",
+        		            "middleName": "",
+        		            "lastName": "Yannam",
+        		            "line1": "TestFlat Test Building",
+        		            "line2": "Test Area",
+        		            "line3": "",
+        		            "line4": "",
+        		            "landmark": "",
+        		            "city": "BANGALORE",
+        		            "district": "Tumkur",
+        		            "state": "KAR",
+        		            "postalCode": "560099",
+        		            "country": "IN",
+        		            "phoneNo": "9886975864",
+        		            "otherPhoneNo": "",
+        		            "company": "",
+        		            "emailId": "renuka1.yannam@ril.com",
+        		            "gstin": "",
+        		            "vendor": ""
+        		        },
+        		        {
+        		            "addressType": "FROM",
+        		            "firstName": "Reliance",
+        		            "middleName": "Retail",
+        		            "lastName": "Ltd.",
+        		            "line1": "Survey No. 54/1",
+        		            "line2": "Nandihalli village 55th Km stone NH-4 Tumkur road",
+        		            "line3": "Oordigree Hobli Taluka",
+        		            "line4": "",
+        		            "landmark": "",
+        		            "city": "Tumkur",
+        		            "district": "Tumkur",
+        		            "state": "KAR",
+        		            "postalCode": "560099",
+        		            "country": "IN",
+        		            "phoneNo": "9886975864",
+        		            "otherPhoneNo": "",
+        		            "company": "RIL",
+        		            "emailId": "shipper@reliance.com",
+        		            "gstin": "",
+        		            "vendor": ""
+        		        }
+        		    ]
+
+        		}
+      pollTime: 10000
+      partitionIdList:
+        - 0
+        - 1
+      producerProperties:
+        security.protocol: "SSL"
+        ssl.truststore.location: "com.scm.automation.test/shipmentService/kafka.truststore.jks"
+        value.serializer: "org.apache.kafka.common.serialization.StringSerializer"
+        ssl.keystore.password: "changeit"
+        ssl.keystore.location: "com.scm.automation.test/shipmentService/gcsitgpeapp05.jks"
+        bootstrap.servers: "gcsitgpeapp05.jio.com:9091,gcsitgpeapp06.jio.com:9091,gcsitgpeapp07.jio.com:9091"
+        ssl.truststore.password: "changeit"
+        key.serializer: "org.apache.kafka.common.serialization.StringSerializer"
+
+testMongoAuthenticationDatabase:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      host: "10.166.181.85"
+      port: "27017"
+      username: "b2cSS"
+      password: "HUcihokikls8pheS"
+      authenticationDatabase: ShipmentServiceDB
+      dbName: "ShipmentServiceDB"
+      collection: "shipment_detail"
+      params:
+        queryFilter:
+          fulfilmentId: "FO10546771267"
+      datacenter: "datacenter1"
+      ssl: false
+      executeIfPresent: true
+
+testMongoQueryParamsWithStringId:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      host: "10.166.181.85"
+      port: "27017"
+      username: "b2cSS"
+      password: "HUcihokikls8pheS"
+      authenticationDatabase: ShipmentServiceDB
+      dbName: "ShipmentServiceDB"
+      collection: "shipment_detail"
+      params:
+        queryFilter:
+          fulfilmentId: "F3467868353"
+      datacenter: "datacenter1"
+      ssl: false
+      executeIfPresent: true
+testOracleInsertQuery:
+  - testcaseId: ID-0003
+    testcaseName: Test
+    request:
+      port: 1521
+      host: 10.21.63.157
+      username: GRTMSSIT
+      password: GRTMSSIT
+      dbName: GRTASIT
+      query: Insert into trip (TRIP_ID,TYPE,SOURCE_NODE,PLANNED_START,PLANNED_END,ACTUAL_START,ACTUAL_END,STATUS,ASSIGNED_VEHICLE,START_KM,VRN_ID,END_KM,DP_ID,CREATED_BY,CREATED_TS,MODIFIED_BY,MODIFIED_TS,FLEET_TYPE,SUGGESTED_VEHICLE_TYPE,DP_NAME,EXTERNAL_REF_ID,FLOW_NAME,SUGGESTED_VEHICLE_NO,VERSION,LATITUDE,LONGITUDE,PLANNED_KM,MOVEMENT_TYPE,RPOS_REQUEST_ID,TRIP_SETTLED_TS,HAS_CONTAINERS,HAS_EMPTY_LABELS,ASSIGNED_VEHICLE_RELEASED,ROUTE_VERSION,IS_ASN_NOT_POSTED) values ('TEST_05092023_T543','HUB-CUSTOMER','QAHUB1',to_timestamp('05-09-23 6:18:51.000000000 AM','DD-MM-RR fmHH12:fmMI:SSXFF AM'),to_timestamp('05-09-23 6:18:51.000000000 AM','DD-MM-RR fmHH12:fmMI:SSXFF AM'),null,null,'ASSIGNED','KA03JF2256',null,null,null,null,'NOAH',to_timestamp('05-09-23 6:18:51.000000000 AM','DD-MM-RR fmHH12:fmMI:SSXFF AM'),'QaLoadHub',to_timestamp('05-09-23 6:18:51.000000000 AM','DD-MM-RR fmHH12:fmMI:SSXFF AM'),'DEDICATED','Vehicle_model_1_03',null,'QAHUB1-05092023-af52c6a4-c497-4b37-9328-32779248789','TripFeed','KA03JF2256',1,19.487027,73.024852,99.51,'FTL',null,null,'Y','Y',null,1,null)
